@@ -1,0 +1,148 @@
+/* =====================================================================
+   EDIT THIS FILE TO UPDATE THE WEBSITE
+   ---------------------------------------------------------------------
+   - NOTICES    -> Notice Board page + "Latest notices" on Home
+   - ACTIVITIES -> Activity page + "Recent activities" on Home
+   - DOWNLOADS  -> Download page + quick links on Home
+   - HOD        -> "Message from the Head of Department" on Home
+   - FACULTY_LINKS -> Faculty Corner page (Drive folders shared only with faculty)
+   Newest items go at the TOP of each list. Keep the commas and quotes.
+   ===================================================================== */
+
+/* VISITOR COUNTER (GoatCounter, free, no cookies)
+   Put your GoatCounter code between the quotes, e.g. "gpcmech" for gpcmech.goatcounter.com.
+   Leave it "" and no visits are counted and no counter is shown. */
+window.VISIT_COUNTER_CODE = "gpcmech";
+/* Displayed starting count only; this does not add visits to GoatCounter. */
+window.VISIT_COUNTER_START = 1000;
+
+/* MICROSOFT CLARITY (free): heatmaps and anonymous session recordings
+   Shows where visitors click, how far they scroll, and where they get stuck.
+   Sign up at https://clarity.microsoft.com with mechgpchhotaudepur@gmail.com, add a project for this
+   website, then copy the Project ID (Settings -> Overview, e.g. "q1w2e3r4t5") between the quotes.
+   Leave it "" and Clarity is switched off. */
+window.CLARITY_PROJECT_ID = "";
+
+/* NOTICES FROM A GOOGLE SHEET
+   Paste the sheet's "Publish to web" CSV link between the quotes below, e.g.
+   "https://docs.google.com/spreadsheets/d/e/2PACX-.../pub?gid=0&single=true&output=csv"
+   Once it is set, notices come from the sheet and the NOTICES list below is only
+   used as a backup if the sheet can't be reached. Leave it "" to use the list. */
+window.NOTICES_SHEET_CSV = "";
+
+/* Notice fields:
+     date:     "2026-10-10" (YYYY-MM-DD) or "" if no date
+     category: "Exam" | "Academic" | "Workshop" | "Admission" | "General"
+     title, text: what students should know
+     link:     URL of the PDF / Drive file, or "" if none            */
+window.NOTICES = [
+  {
+    date: "",
+    category: "Academic",
+    title: "Class Coordinator List",
+    text: "Class coordinators for each semester of the Mechanical Engineering diploma.",
+    link: "https://drive.google.com/drive/folders/14TWtEp8hNYTEMF1RaG4pyEvvmJv26wYz?usp=sharing",
+  },
+];
+
+/* Activity fields:
+     youtube:  the video ID (the part after watch?v= in the YouTube link)
+     category: "Project & Exhibition" | "Industrial Visit" | "Sports & Culture" | "Awareness"
+     year:     "2025" or "" if not known
+     title, text ("" is fine), link (optional extra link)          */
+window.ACTIVITIES = [
+  { youtube: "jBYtiCcspv0", category: "Sports & Culture", year: "2025",
+    title: "Sports Week 2025", text: "", link: "" },
+  { youtube: "IycKb1dhUdA", category: "Industrial Visit", year: "",
+    title: "Industrial visit at SEKO Shivam Engitech Private Limited", text: "", link: "" },
+  { youtube: "xe8e20yyZuc", category: "Awareness", year: "",
+    title: "Vikas Saptah", text: "", link: "" },
+  { youtube: "QVEnMTi5g2k", category: "Industrial Visit", year: "",
+    title: "Visit to Siemens Centre of Excellence", text: "", link: "" },
+  { youtube: "bjZFTeRDTug", category: "Project & Exhibition", year: "2024",
+    title: "Project Fair 2024, Government Polytechnic Chhotaudepur", text: "", link: "" },
+  { youtube: "ggZJIOchn10", category: "Project & Exhibition", year: "2024",
+    title: "Model Presentation 2024", text: "", link: "" },
+  { youtube: "emQEKTMBigI", category: "Project & Exhibition", year: "2024",
+    title: "Project Fair 2024, Mechanical Department", text: "", link: "" },
+  { youtube: "DLtYzkD5usc", category: "Industrial Visit", year: "",
+    title: "Industrial visit at Shree Parantap Institute of CNC Programming (Mechanical Branch)", text: "", link: "" },
+  { youtube: "dhS1A6qHRGw", category: "Industrial Visit", year: "",
+    title: "Industrial visit at Shree Parantap Institute of CNC Programming", text: "",
+    link: "http://parantapcnc.com/" },
+  { youtube: "WoB2mxtSpw8", category: "Project & Exhibition", year: "",
+    title: "Poster Presentation Event",
+    text: "An academic gathering showcasing student research work and promoting knowledge exchange within mechanical engineering.", link: "" },
+  { youtube: "sw0vlnMkjfI", category: "Sports & Culture", year: "2024",
+    title: "Sports Week 2024", text: "", link: "" },
+  { youtube: "NmMBPZTtD5U", category: "Awareness", year: "",
+    title: "World Environment Day celebration",
+    text: "A celebration highlighting environmental conservation and sustainability, and the role of mechanical engineering in addressing environmental challenges.", link: "" },
+  { youtube: "CA3vbZK_nTY", category: "Project & Exhibition", year: "2023",
+    title: "Project Fair 2023",
+    text: "A showcase of the innovative and impactful projects undertaken by mechanical engineering students.", link: "" },
+];
+
+/* MESSAGE FROM THE HEAD OF DEPARTMENT (shown on the Home page)
+   Fill in the name and the message. Leave message "" and the section stays hidden.
+   photo: upload the HOD's photo to assets/img/ (e.g. assets/img/hod.jpg) and put the path here,
+          or leave "" to show initials instead.
+   Start a new paragraph in the message with \n\n                                              */
+window.HOD = {
+  name: "",
+  designation: "Head of Department, Mechanical Engineering",
+  photo: "",
+  message: "",
+};
+
+/* Download fields: title, text, icon (Material Symbols name), link */
+window.DOWNLOADS = [
+  { title: "Student Fees Payment", text: "Pay fees online through the e-Shiksha ERP portal", icon: "payments",
+    link: "https://erp.eshiksa.net/esh/index.php?plugin=Login&action=index" },
+  { title: "Syllabus (New)", text: "Current GTU curriculum for all semesters", icon: "menu_book",
+    link: "https://drive.google.com/drive/folders/1Ab-tlDQsAo4xB5qgpbzMoIwun-G7IsNj?usp=share_link" },
+  { title: "Lab Manuals (New Syllabus)", text: "Practical manuals as per the new syllabus", icon: "science",
+    link: "https://drive.google.com/drive/folders/1RmLWJbUnPERMb-mDbpRmbgB1lHmcWy8g?usp=share_link" },
+  { title: "Class Coordinator List", text: "Coordinators for each semester", icon: "groups",
+    link: "https://drive.google.com/drive/folders/14TWtEp8hNYTEMF1RaG4pyEvvmJv26wYz?usp=sharing" },
+  { title: "Registration Form", text: "Student registration forms", icon: "assignment",
+    link: "https://drive.google.com/drive/folders/1nckHvtN_qTqWdrHODoB9XGr3c4BR8mb-?usp=sharing" },
+  { title: "Academic Calendar (Institute)", text: "Term dates, exams and holidays of GP Chhotaudepur", icon: "calendar_month",
+    link: "https://drive.google.com/drive/folders/1jqFY7QdRVsnSJunixYHZ6OtXzIZ3sIqF?usp=sharing" },
+  { title: "GTU Academic Calendar", text: "University calendar for diploma programmes", icon: "event",
+    link: "https://www.gtu.ac.in/academics/academic-calendar" },
+  { title: "GTU Syllabus & Teaching Scheme", text: "Official GTU syllabus search, by branch and semester", icon: "travel_explore",
+    link: "https://gtu.ac.in/syllabus/syllabus.aspx" },
+  { title: "Department Presentation", text: "Presentation on the Mechanical Engineering Department", icon: "slideshow",
+    link: "https://drive.google.com/file/d/1RhtTXpXNDdfaJSNkv59wwYlOYWkug7Ur/view?usp=sharing" },
+  { title: "Syllabus (Old)", text: "Previous curriculum, for backlog students", icon: "history_edu",
+    link: "https://drive.google.com/drive/folders/1-Cshtw7Cb299ECrHz_BXtWiFJ-9QkX7d?usp=share_link" },
+  { title: "Lab Manuals (Old Syllabus)", text: "Practical manuals as per the old syllabus", icon: "inventory_2",
+    link: "https://drive.google.com/drive/folders/1pKQ_n2MduTtWDhCy5pOlbbPE42BVnEJU?usp=share_link" },
+];
+
+/* FACULTY CORNER (faculty.html)
+   Each link should be a Google Drive folder, Sheet or file whose sharing is "Restricted" and
+   shared only with the faculty Gmail IDs. Google then asks faculty to sign in, and nobody else
+   can open it, even though the link itself is visible in this file.
+   NEVER use "Anyone with the link" for these files.
+   group: "NBA / SAR Evidence" | "Meetings & Circulars" | "Student Records & Results" | "Timetables & Lab Records"
+   Leave link "" and the card shows "Not linked yet".                                              */
+window.FACULTY_LINKS = [
+  { group: "NBA / SAR Evidence", title: "SAR evidence: all criteria", text: "Main folder with one sub-folder per criterion", icon: "folder_special", link: "" },
+  { group: "NBA / SAR Evidence", title: "Criterion 1: Vision, Mission & PEOs", text: "", icon: "flag", link: "" },
+  { group: "NBA / SAR Evidence", title: "Criterion 2: Curriculum & Teaching-Learning", text: "", icon: "menu_book", link: "" },
+  { group: "NBA / SAR Evidence", title: "Criterion 3: Course Outcomes & POs", text: "CO-PO mapping and attainment", icon: "account_tree", link: "" },
+  { group: "NBA / SAR Evidence", title: "Criterion 4: Students' Performance", text: "", icon: "monitoring", link: "" },
+  { group: "NBA / SAR Evidence", title: "Criterion 5: Faculty Information", text: "", icon: "badge", link: "" },
+  { group: "NBA / SAR Evidence", title: "Criterion 6: Facilities & Technical Support", text: "", icon: "precision_manufacturing", link: "" },
+  { group: "NBA / SAR Evidence", title: "Criterion 7: Continuous Improvement", text: "", icon: "trending_up", link: "" },
+  { group: "NBA / SAR Evidence", title: "Criterion 8: Student Support Systems", text: "Institute level", icon: "support", link: "" },
+  { group: "NBA / SAR Evidence", title: "Criterion 9: Governance & Institutional Support", text: "Institute level", icon: "account_balance", link: "" },
+  { group: "Meetings & Circulars", title: "Minutes of meetings (MOM)", text: "Department, academic calendar and DAB meetings", icon: "groups", link: "" },
+  { group: "Meetings & Circulars", title: "Internal circulars & office orders", text: "", icon: "description", link: "" },
+  { group: "Student Records & Results", title: "Attendance registers", text: "Semester-wise attendance", icon: "fact_check", link: "" },
+  { group: "Student Records & Results", title: "Marks & result analysis", text: "Internal marks, GTU results and analysis", icon: "analytics", link: "" },
+  { group: "Timetables & Lab Records", title: "Timetables", text: "Class, faculty and lab timetables", icon: "calendar_month", link: "" },
+  { group: "Timetables & Lab Records", title: "Lab registers & stock", text: "Dead-stock, consumables and maintenance records", icon: "inventory", link: "" },
+];
