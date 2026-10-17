@@ -1,34 +1,16 @@
-MECHANICAL WEBSITE: SLIDESHOW AND STUDENT TOOLS
+MECHANICAL WEBSITE UPDATE
 
-UPLOAD
-Extract this ZIP and upload the files and assets folder to your existing GitHub Pages publishing folder. Upload the contents, not the ZIP file. Keep index.html at the website root. Replace matching files. The live site changes only after GitHub deploys your upload.
+1. Extract this ZIP. Upload its contents (not the ZIP) to your existing GitHub Pages publishing folder, keeping index.html and assets in their existing locations.
+2. The homepage now contains 21 slides from the exact presentation originally linked on the site. It advances every 8 seconds, has pause/previous/next/slide selection/full-screen controls and pauses while hovered or focused. Reduced-motion visitors start paused. Slides are images; PowerPoint animation/audio is not included.
 
-NOTICE SHEET
-Your published Google Sheet is already configured in assets/js/notices-config.js. Name and Link still work exactly as before. To enable dates and filters, add these OPTIONAL headers on row 1 of the SAME published Notices tab:
-A: Name
-B: Link
-C: Date
-D: Category
-E: Semester
+NOTICE SHEET: ONE-TIME CONNECTION
+1. Create the Google Sheet by importing the supplied Mechanical-Website-Notices.xlsx (or let Codex import it after Google Drive is connected). Keep the tab name Notices and the Name and Link headers on row 1.
+2. In Google Sheets choose File > Share > Publish to web. Select only the Notices tab, choose Comma-separated values (.csv), and publish it. Keep Automatically republish when changes are made enabled. These notice names and links will be public.
+3. Copy the published CSV URL into assets/js/notices-config.js between the empty quotes. Upload that updated file to GitHub once. Alternatively, send the CSV URL to Codex to insert it for you.
+4. Add each notice on its own row with a Name and the full https:// document Link. Put the latest notices directly below the header. Paste plain URLs, not clickable labels or HYPERLINK formulas. Ensure visitors can view each linked document.
+5. After connection, the homepage Latest Notices and Notice Board read this same sheet. The open webpage checks every minute while visible; Google's publication cache may add delay. Remove a row to remove its notice. Blank names are ignored. If the sheet cannot load, the existing Class Coordinator List is used as backup.
 
-Enter the date as YYYY-MM-DD (for example, 2026-10-17). Notices with dates appear newest first; dates within the past seven days show New. Undated notices remain below dated ones in sheet order. Do not add a date unless it is the correct issue date.
-Category: Exam, Academic, Admission, Workshop or General. Custom categories also appear in the filter. Blank category means General.
-Semester: 1 to 6. Multiple semesters can be entered as 1,3,5; blank or All means the notice applies to every semester.
-Use plain https:// URLs in Link. Visitors must have access to the linked documents.
-
-Keep the Notices tab published as CSV with automatic republishing enabled. Do not replace the tab or change its published link. The website checks for changes every minute while visible; Google publishing cache can add delay. Names and links are public. Search, category and semester filters are on Notice Board. The homepage shows the three newest notices. If the sheet is unreachable, the existing backup notice list appears.
-
-STUDENT QUICK LINKS
-Timetables opens Notice Board with a timetable search; Exam Notices opens it filtered to Exam. The calendar, syllabus, manuals and coordinator links use existing department document folders. These filters require the relevant notices to have been entered in your sheet. Virtual Labs opens the existing experiments page.
-
-PHOTOS
-Laboratories now includes five facility photos from the existing presentation: three for 3D printing and two for CNC simulator training. Select a photo to enlarge it. Browse with previous/next, arrow keys or swipes. Escape closes the viewer.
-
-SLIDESHOW AND MOBILE
-The original 21 presentation slides remain. Playback advances every eight seconds, pauses on hover or focus, and supports slide selection, keyboard arrows, swipes and full screen when supported. Reduced-motion users start paused. Layout and controls adapt to small screens. Original PowerPoint animations/audio are not included in the image slideshow.
+The sheet is not yet connected while NOTICES_SHEET_CSV is blank. No changes have been deployed to GitHub by this package.
 
 LANGUAGE BUTTONS
 English, ગુજરાતી and हिन्दी appear in the header of every main website page. Gujarati and Hindi use the site's existing Google Translate integration, extended to Hindi, and require internet access and Google's translation service. Choice is remembered on the device using a cookie. English returns to the original content. Text inside slide images, photographs, PDFs and linked Drive documents remains in its original language. Automatic translations should be reviewed for official use.
-
-VISITOR COUNTER
-The displayed visitor count now starts at 1,000 plus the total recorded by GoatCounter. The initial value is set in assets/js/content.js as VISIT_COUNTER_START. Recorded analytics are unchanged. A cached total is shown if the counter service is temporarily unavailable; new devices show the starting count until the total loads.

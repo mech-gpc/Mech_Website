@@ -235,36 +235,15 @@ document.addEventListener("click", function () {
   document.querySelectorAll(".dd-panel.\\!block").forEach(function (p) { p.classList.remove("!block"); p.previousElementSibling.setAttribute("aria-expanded", "false"); });
 });
 
-/* Visitor counter: initial display count plus GoatCounter's recorded total. */
+/* Displayed count includes a starting value; recorded analytics are unchanged. */
 (function () {
-  var code = (window.VISIT_COUNTER_CODE || "").trim();
-  if (!code || location.protocol === "file:") return;
-  var start = Number(window.VISIT_COUNTER_START);
-  start = Number.isFinite(start) && start >= 0 ? Math.floor(start) : 0;
-  var box = document.getElementById("visit-counter"), n = document.getElementById("visit-count");
-  var key = "gpcmech-count-" + code;
-  function number(value) {
-    var cleaned = String(value == null ? "" : value).replace(/[,\s\u00a0\u202f]/g, "");
-    return /^\d+$/.test(cleaned) && Number.isSafeInteger(Number(cleaned)) ? Number(cleaned) : null;
-  }
-  function show(total) {
-    if (!box || !n) return;
-    n.textContent = (start + total).toLocaleString("en-IN");
-    box.title = start ? "Includes a starting count of " + start.toLocaleString("en-IN") + " plus recorded visits." : "Recorded visits";
-    box.classList.remove("hidden"); box.classList.add("inline-flex");
-  }
-  var cached = null;
-  try { cached = number(localStorage.getItem(key)); } catch (e) {}
-  show(cached === null ? 0 : cached);
-  var base = "https://" + code + ".goatcounter.com";
-  var s = document.createElement("script");
-  s.async = true; s.src = "https://gc.zgo.at/count.js"; s.setAttribute("data-goatcounter", base + "/count");
-  document.head.appendChild(s);
-  fetch(base + "/counter/TOTAL.json").then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }).then(function (d) {
-    var total = number(d && d.count); if (total === null) return;
-    show(total);
-    try { localStorage.setItem(key, String(total)); } catch (e) {}
-  }).catch(function () {});
+ var code=(window.VISIT_COUNTER_CODE||"").trim(); if(!code||location.protocol==="file:")return;
+ var start=Number(window.VISIT_COUNTER_START)||0,box=document.getElementById("visit-counter"),n=document.getElementById("visit-count"),key="gpcmech-count-"+code;
+ function number(value){var clean=String(value==null?"":value).replace(/[,\s\u00a0\u202f]/g,"");return /^\d+$/.test(clean)&&Number.isSafeInteger(Number(clean))?Number(clean):null;}
+ function show(total){if(!box||!n)return;n.textContent=(start+total).toLocaleString("en-IN");box.title="Includes a starting count of "+start.toLocaleString("en-IN")+" plus recorded visits.";box.classList.remove("hidden");box.classList.add("inline-flex");}
+ var cached=null;try{cached=number(localStorage.getItem(key));}catch(e){}show(cached===null?0:cached);
+ var base="https://"+code+".goatcounter.com",script=document.createElement("script");script.async=true;script.src="https://gc.zgo.at/count.js";script.setAttribute("data-goatcounter",base+"/count");document.head.appendChild(script);
+ fetch(base+"/counter/TOTAL.json").then(function(r){if(!r.ok)throw Error(r.status);return r.json();}).then(function(d){var total=number(d&&d.count);if(total===null)return;show(total);try{localStorage.setItem(key,String(total));}catch(e){}}).catch(function(){});
 })();
 
 /* Message from the Head of Department (HOD in content.js). Hidden until a message is filled in. */

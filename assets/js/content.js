@@ -12,8 +12,7 @@
 /* VISITOR COUNTER (GoatCounter, free, no cookies)
    Put your GoatCounter code between the quotes, e.g. "gpcmech" for gpcmech.goatcounter.com.
    Leave it "" and no visits are counted and no counter is shown. */
-window.VISIT_COUNTER_CODE = "gpcmech";
-/* Displayed starting count only; this does not add visits to GoatCounter. */
+window.VISIT_COUNTER_CODE = "mechwebsite";
 window.VISIT_COUNTER_START = 1000;
 
 /* MICROSOFT CLARITY (free): heatmaps and anonymous session recordings
