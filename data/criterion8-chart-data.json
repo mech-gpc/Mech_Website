@@ -1,0 +1,375 @@
+{
+  "1": [
+    {
+      "label": "s",
+      "categories": [
+        "8.1 Mentoring system",
+        "8.2 Feedback analysis, action",
+        "8.3 Feedback on facilities",
+        "8.4 Career guidance, placement",
+        "8.5 Entrepreneurship"
+      ],
+      "values": [
+        10.0,
+        10.0,
+        5.0,
+        20.0,
+        5.0
+      ]
+    }
+  ],
+  "2": [
+    {
+      "label": "Records",
+      "categories": [
+        "211",
+        "212",
+        "221",
+        "222",
+        "231",
+        "232",
+        "241",
+        "242",
+        "251",
+        "252"
+      ],
+      "values": [
+        176.0,
+        201.0,
+        79.0,
+        141.0,
+        74.0,
+        119.0,
+        63.0,
+        128.0,
+        69.0,
+        105.0
+      ]
+    }
+  ],
+  "3": [
+    {
+      "label": "Records",
+      "categories": [
+        "Career counselling",
+        "Motivation of good performers",
+        "Timely term work",
+        "Mid-semester exam importance",
+        "Project quality",
+        "Parent contact",
+        "Industrial visits, expert lectures",
+        "Backlog clearing"
+      ],
+      "values": [
+        76.0,
+        79.0,
+        81.0,
+        84.0,
+        84.0,
+        88.0,
+        148.0,
+        1084.0
+      ]
+    }
+  ],
+  "4": [
+    {
+      "label": "Semester 4",
+      "categories": [
+        "2021 entry",
+        "2022 entry",
+        "2023 entry"
+      ],
+      "values": [
+        2.38,
+        2.22,
+        2.41
+      ]
+    },
+    {
+      "label": "Semester 6",
+      "categories": [
+        "2021 entry",
+        "2022 entry",
+        "2023 entry"
+      ],
+      "values": [
+        5.32,
+        5.69,
+        6.34
+      ]
+    }
+  ],
+  "5": [
+    {
+      "label": "Semester 4",
+      "categories": [
+        "2021 entry",
+        "2022 entry",
+        "2023 entry"
+      ],
+      "values": [
+        82.0,
+        88.0,
+        87.0
+      ]
+    },
+    {
+      "label": "Semester 6",
+      "categories": [
+        "2021 entry",
+        "2022 entry",
+        "2023 entry"
+      ],
+      "values": [
+        41.0,
+        34.0,
+        26.0
+      ]
+    }
+  ],
+  "6": [
+    {
+      "label": "Mean rating out of 5",
+      "categories": [
+        "Facility, term 241",
+        "Facility, term 242",
+        "Industrial visits (7 forms)",
+        "Entrepreneurship webinar",
+        "Computer training"
+      ],
+      "values": [
+        3.58,
+        3.58,
+        4.33,
+        3.81,
+        4.52
+      ]
+    }
+  ],
+  "7": [
+    {
+      "label": "Term 241 (92 responses)",
+      "categories": [
+        "Books",
+        "Reading space",
+        "Library staff",
+        "Wi-Fi",
+        "Office staff",
+        "Toilets",
+        "Drinking water",
+        "Grievance",
+        "Placement cell",
+        "Lab equipment",
+        "Green campus",
+        "Classes, labs clean",
+        "Power",
+        "Sports",
+        "First aid, fire"
+      ],
+      "values": [
+        3.6,
+        3.5,
+        3.72,
+        3.43,
+        3.85,
+        3.46,
+        3.58,
+        3.63,
+        3.58,
+        3.45,
+        3.65,
+        3.7,
+        3.65,
+        3.39,
+        3.52
+      ]
+    },
+    {
+      "label": "Term 242 (52 responses)",
+      "categories": [
+        "Books",
+        "Reading space",
+        "Library staff",
+        "Wi-Fi",
+        "Office staff",
+        "Toilets",
+        "Drinking water",
+        "Grievance",
+        "Placement cell",
+        "Lab equipment",
+        "Green campus",
+        "Classes, labs clean",
+        "Power",
+        "Sports",
+        "First aid, fire"
+      ],
+      "values": [
+        3.46,
+        3.44,
+        3.63,
+        3.62,
+        3.73,
+        3.58,
+        3.6,
+        3.52,
+        3.67,
+        3.83,
+        3.5,
+        3.5,
+        3.65,
+        3.44,
+        3.58
+      ]
+    }
+  ],
+  "8": [
+    {
+      "label": "Activities",
+      "categories": [
+        "2023-24",
+        "2024-25",
+        "2025-26"
+      ],
+      "values": [
+        11.0,
+        9.0,
+        13.0
+      ]
+    }
+  ],
+  "9": [
+    {
+      "label": "Internship-I",
+      "categories": [
+        "2023-24",
+        "2024-25",
+        "2025-26"
+      ],
+      "values": [
+        42.0,
+        31.0
+      ]
+    },
+    {
+      "label": "Internship-II",
+      "categories": [
+        "2023-24",
+        "2024-25",
+        "2025-26"
+      ],
+      "values": [
+        30.0,
+        18.0,
+        28.0
+      ]
+    }
+  ],
+  "10": [
+    {
+      "label": "Placed",
+      "categories": [
+        "2021-22",
+        "2022-23",
+        "2023-24",
+        "2024-25",
+        "2025-26"
+      ],
+      "values": [
+        33.0,
+        24.0,
+        20.0,
+        13.0,
+        10.0
+      ]
+    },
+    {
+      "label": "Higher studies",
+      "categories": [
+        "2021-22",
+        "2022-23",
+        "2023-24",
+        "2024-25",
+        "2025-26"
+      ],
+      "values": [
+        27.0,
+        34.0,
+        19.0,
+        18.0
+      ]
+    }
+  ],
+  "11": [
+    {
+      "label": "Placement %",
+      "categories": [
+        "2022-23",
+        "2023-24",
+        "2024-25",
+        "2025-26"
+      ],
+      "values": [
+        60.0,
+        56.0,
+        72.0,
+        45.0
+      ]
+    }
+  ],
+  "12": [
+    {
+      "label": "Average",
+      "categories": [
+        "2021-22",
+        "2022-23",
+        "2023-24",
+        "2024-25",
+        "2025-26"
+      ],
+      "values": [
+        1.49,
+        1.75,
+        2.0,
+        2.15,
+        2.3
+      ]
+    },
+    {
+      "label": "Highest",
+      "categories": [
+        "2021-22",
+        "2022-23",
+        "2023-24",
+        "2024-25",
+        "2025-26"
+      ],
+      "values": [
+        1.8,
+        2.4,
+        2.88,
+        3.48,
+        3.6
+      ]
+    }
+  ],
+  "13": [
+    {
+      "label": "Participants",
+      "categories": [
+        "Art of Opportunity, 2023-24",
+        "Idea2Impact, 2024-25",
+        "PM Vishwakarma seminar, 2025-26",
+        "Wadhwani training, 2023-24",
+        "IBM SkillsBuild, 2023-24"
+      ],
+      "values": [
+        42.0,
+        46.0,
+        41.0,
+        64.0,
+        72.0
+      ]
+    }
+  ]
+}
