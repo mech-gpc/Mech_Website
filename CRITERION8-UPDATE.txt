@@ -1,0 +1,13 @@
+STUDENT SUPPORT UPDATE
+New Student Mentoring page: student-mentoring.html.
+The supplied full 11-slide presentation is embedded on Student Mentoring, TPO and the placement.html alias. Slides use local WebP images, automatic playback every eight seconds, previous/next, pause, slide selection, keyboard arrows, swipe and full-screen controls. Slide text is also available in an expandable transcript. A download of the original presentation is included.
+
+TPO now includes the Criterion 8 presentation summary. Counts have the reporting windows stated in that deck and remain separate from detailed annual records. The deck reports a 2025-26 average package of 2.30 LPA; the independently parsed offer-record mean is approximately 2.32 LPA, so the public summary explicitly attributes 2.30 to the presentation rather than claiming identical calculation scope. Existing charts continue to show medians and highest offers from usable records.
+
+Mentoring content uses aggregate study findings; student names, personal mentoring sheets and individual academic records are not included.
+
+Upload the extracted package contents to GitHub, replacing matching files. No live deployment has been performed by this ZIP.
+
+CHART SOURCE UPDATE
+TPO’s primary percentage and annual average/highest package charts now use the chart caches embedded in slide 9 of the supplied Criterion 8 deck, replacing the earlier primary cohort-percent/median charts. Values are presented as reported because rate denominators are not shown in the deck. Detailed workbook-based annual records remain separately labelled below.
+Mentoring now also has native SPI and feedback-rating charts from the deck. The deck headline reports 1,196 mentoring records, while the ten-term bar chart totals 1,155; the mentoring page flags the difference for confirmation. Original slide images are preserved.
