@@ -1,0 +1,43 @@
+{
+  "source": "Criterion_8_Student_Support_Systems_v2.pptx",
+  "mentoring": {
+    "records": 1196,
+    "students": 509,
+    "sheets": 27,
+    "terms": 10,
+    "coordinators_2026_27": 9,
+    "weak_musters": 141,
+    "backlog_guidance_percent": 91,
+    "detention_rule_records": 659,
+    "weak_student_subject_entries": 3691,
+    "same_term_pass_percent_for_entries": 34,
+    "spi_below5_improved_next_term_percent": 53,
+    "spi_below3_improved_next_term_percent": 61,
+    "initially_weak_students": 343,
+    "reached_final_semester": 110
+  },
+  "feedback": {
+    "facility": 144,
+    "visit": 307,
+    "webinar": 95,
+    "computer_training": 42,
+    "facility_statements": 15,
+    "facility_mean_terms241_242": 3.58
+  },
+  "career": {
+    "placed_students_5years": 100,
+    "selections": 122,
+    "recruiter_entries": 36,
+    "highest_package_lpa": 3.6,
+    "reported_average_2025_26_lpa": 2.3,
+    "higher_studies_4years": 98,
+    "activities_3years": 33,
+    "internship_students": 149,
+    "mous": 5
+  },
+  "entrepreneurship": {
+    "sessions": 3,
+    "idea2impact_mean": 3.81,
+    "ratings4or5_percent": 65.3
+  }
+}
