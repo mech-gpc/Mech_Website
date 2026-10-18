@@ -1,0 +1,1487 @@
+{
+  "placement": [
+    [
+      "2025-26",
+      10,
+      7
+    ],
+    [
+      "2024-25",
+      13,
+      6
+    ],
+    [
+      "2023-24",
+      35,
+      8
+    ],
+    [
+      "2022-23",
+      24,
+      15
+    ],
+    [
+      "2021-22",
+      33,
+      6
+    ],
+    [
+      "2020-21",
+      30,
+      5
+    ],
+    [
+      "2019-20",
+      16,
+      1
+    ]
+  ],
+  "higher_study": [
+    [
+      "2024-25",
+      18
+    ],
+    [
+      "2023-24",
+      19
+    ],
+    [
+      "2022-23",
+      34
+    ],
+    [
+      "2021-22",
+      27
+    ],
+    [
+      "2020-21",
+      49
+    ],
+    [
+      "2019-20",
+      65
+    ],
+    [
+      "2018-19",
+      30
+    ],
+    [
+      "2017-18",
+      45
+    ]
+  ],
+  "recruiter_records": [
+    [
+      "2025-26",
+      "Turbo Energy Private Limited",
+      3
+    ],
+    [
+      "2025-26",
+      "Alembic Pharmaceutical",
+      2
+    ],
+    [
+      "2025-26",
+      "Aditya Birla power composite limited",
+      1
+    ],
+    [
+      "2025-26",
+      "SRF",
+      1
+    ],
+    [
+      "2025-26",
+      "Hilti Manufacturing Private limited Savli",
+      1
+    ],
+    [
+      "2025-26",
+      "Newly weds foods India",
+      1
+    ],
+    [
+      "2025-26",
+      "Apollo Tyres",
+      1
+    ],
+    [
+      "2024-25",
+      "Reliance industries",
+      1
+    ],
+    [
+      "2024-25",
+      "Schott glass india pvt ltd.",
+      1
+    ],
+    [
+      "2024-25",
+      "Global Gourmet pvt ltd",
+      1
+    ],
+    [
+      "2024-25",
+      "Apollo tyre limited",
+      1
+    ],
+    [
+      "2024-25",
+      "Tarak chemical Ltd",
+      1
+    ],
+    [
+      "2024-25",
+      "Turbo Energy Pvt Ltd",
+      8
+    ],
+    [
+      "2023-24",
+      "L&T Baroda",
+      1
+    ],
+    [
+      "2023-24",
+      "Turbo Energy Private Limited",
+      14
+    ],
+    [
+      "2023-24",
+      "FAG SCHAFFLER india ltd",
+      1
+    ],
+    [
+      "2023-24",
+      "SCHOTT Poonawalla",
+      1
+    ],
+    [
+      "2023-24",
+      "Cosmos Impex",
+      1
+    ],
+    [
+      "2023-24",
+      "SCHAEFFLER",
+      1
+    ],
+    [
+      "2023-24",
+      "Schaeffer india ltd",
+      1
+    ],
+    [
+      "2023-24",
+      "Higher Study",
+      15
+    ],
+    [
+      "2022-23",
+      "TURBO ENERGY PVT LTD",
+      3
+    ],
+    [
+      "2022-23",
+      "Riya Enterprise",
+      1
+    ],
+    [
+      "2022-23",
+      "AI INFO SOLUTION",
+      1
+    ],
+    [
+      "2022-23",
+      "YSF",
+      7
+    ],
+    [
+      "2022-23",
+      "UPL",
+      1
+    ],
+    [
+      "2022-23",
+      "Hero Motocorp Ltd",
+      2
+    ],
+    [
+      "2022-23",
+      "NBC Bearings",
+      1
+    ],
+    [
+      "2022-23",
+      "Himile Molds India Private Limited.",
+      1
+    ],
+    [
+      "2022-23",
+      "Apollo Tyres Limited, Vadodara",
+      1
+    ],
+    [
+      "2022-23",
+      "AMNS INDIA",
+      1
+    ],
+    [
+      "2022-23",
+      "Alembic Pharmaceuticals Ltd",
+      1
+    ],
+    [
+      "2022-23",
+      "Stayam Manpower Services Pvt Ltd",
+      1
+    ],
+    [
+      "2022-23",
+      "schaeffler india Pvt Ltd",
+      1
+    ],
+    [
+      "2022-23",
+      "Reliance Ltd",
+      1
+    ],
+    [
+      "2022-23",
+      "Ceat tyre Ltd",
+      1
+    ],
+    [
+      "2021-22",
+      "ArcelorMittal Nippon Steel India",
+      3
+    ],
+    [
+      "2021-22",
+      "Subros Ltd.",
+      12
+    ],
+    [
+      "2021-22",
+      "TURBO ENERGY PVT LTD",
+      8
+    ],
+    [
+      "2021-22",
+      "Voltas Ltd",
+      5
+    ],
+    [
+      "2021-22",
+      "TAta Autocomp Systems Ltd",
+      2
+    ],
+    [
+      "2021-22",
+      "Banco india Ltd",
+      3
+    ],
+    [
+      "2020-21",
+      "Motherson Sumi System Ltd",
+      5
+    ],
+    [
+      "2020-21",
+      "Himile Mold india ltd",
+      10
+    ],
+    [
+      "2020-21",
+      "Lason & Toubro (Defence)Ltd, Hazira",
+      1
+    ],
+    [
+      "2020-21",
+      "ArcelorMittal Nippon Steel India",
+      1
+    ],
+    [
+      "2020-21",
+      "TATA Autocomp Systems Ltd",
+      13
+    ],
+    [
+      "2019-20",
+      "Asahi Glass India Ltd",
+      16
+    ]
+  ],
+  "tpo_activities": [
+    {
+      "year": "2026-27",
+      "title": "Visited Vibrant Gujarat Regional Exhibition (VGRE)\n– Central Gujarat Region at GSFC University, Vadodara,",
+      "date": "",
+      "participants": "24.0",
+      "scope": "Institute-level TPO activity"
+    },
+    {
+      "year": "2026-27",
+      "title": "Placement Drive-2025",
+      "date": "",
+      "participants": "17.0",
+      "scope": "Institute-level TPO activity"
+    },
+    {
+      "year": "2026-27",
+      "title": "PMIS SCHEME Awareness Program",
+      "date": "",
+      "participants": "24.0",
+      "scope": "Institute-level TPO activity"
+    },
+    {
+      "year": "2026-27",
+      "title": "One-Day Technical Capacity Building Session\nunder BharatCares (CSRBOX) – IBM SkillsBuild Initiative",
+      "date": "",
+      "participants": "69.0",
+      "scope": "Institute-level TPO activity"
+    },
+    {
+      "year": "2025-26",
+      "title": "AI Resume Building & LinkedIn Profile creation Seminar",
+      "date": "",
+      "participants": "64.0",
+      "scope": "Institute-level TPO activity"
+    },
+    {
+      "year": "2025-26",
+      "title": "Building AI Awareness & Readiness among Staff",
+      "date": "",
+      "participants": "21 Staff of Institute",
+      "scope": "Institute-level TPO activity"
+    },
+    {
+      "year": "2025-26",
+      "title": "Overseas Employment and Study seminar",
+      "date": "",
+      "participants": "62.0",
+      "scope": "Institute-level TPO activity"
+    },
+    {
+      "year": "2025-26",
+      "title": "Placement, Higher Studies & Government Schemes Awareness seminar for Engineering Students",
+      "date": "",
+      "participants": "All diploma engineering students of Chhotaudepur District",
+      "scope": "Institute-level TPO activity"
+    },
+    {
+      "year": "2025-26",
+      "title": "Placement Drive-2025",
+      "date": "",
+      "participants": "38.0",
+      "scope": "Institute-level TPO activity"
+    },
+    {
+      "year": "2025-26",
+      "title": "Online training program on “Introduction to Computer",
+      "date": "",
+      "participants": "65.0",
+      "scope": "Institute-level TPO activity"
+    },
+    {
+      "year": "2025-26",
+      "title": "Awareness seminar on PM Viswakarma Yojna",
+      "date": "",
+      "participants": "41.0",
+      "scope": "Institute-level TPO activity"
+    },
+    {
+      "year": "2025-26",
+      "title": "Mock Written Test for Campus placement",
+      "date": "",
+      "participants": "44.0",
+      "scope": "Institute-level TPO activity"
+    },
+    {
+      "year": "2025-26",
+      "title": "Mock Interview for Campus placement",
+      "date": "",
+      "participants": "47.0",
+      "scope": "Institute-level TPO activity"
+    },
+    {
+      "year": "2025-26",
+      "title": "Mock Group Discussion GD for Campus Placement",
+      "date": "",
+      "participants": "43.0",
+      "scope": "Institute-level TPO activity"
+    },
+    {
+      "year": "2025-26",
+      "title": "How to face an Interview Seminar",
+      "date": "",
+      "participants": "43.0",
+      "scope": "Institute-level TPO activity"
+    },
+    {
+      "year": "2025-26",
+      "title": "Placement Fair-2026",
+      "date": "",
+      "participants": "25.0",
+      "scope": "Institute-level TPO activity"
+    },
+    {
+      "year": "2025-26",
+      "title": "Visit to Kaynes Semicon Sanand and Science City Ahmedabad",
+      "date": "",
+      "participants": "46 students and 4 Faculty Member",
+      "scope": "Institute-level TPO activity"
+    },
+    {
+      "year": "2024-25",
+      "title": "Mock Written Test",
+      "date": "",
+      "participants": "36.0",
+      "scope": "Institute-level TPO activity"
+    },
+    {
+      "year": "2024-25",
+      "title": "Mock Interview for Campus Placement preparation",
+      "date": "",
+      "participants": "68.0",
+      "scope": "Institute-level TPO activity"
+    },
+    {
+      "year": "2024-25",
+      "title": "Mock Group discussion for Campus Placement preparation",
+      "date": "",
+      "participants": "34.0",
+      "scope": "Institute-level TPO activity"
+    },
+    {
+      "year": "2024-25",
+      "title": "grade analysis for final year student",
+      "date": "",
+      "participants": "24.0",
+      "scope": "Institute-level TPO activity"
+    },
+    {
+      "year": "2024-25",
+      "title": "Introduction to computer training Program Spoken tutorial IIT-Bombay",
+      "date": "",
+      "participants": "104.0",
+      "scope": "Institute-level TPO activity"
+    },
+    {
+      "year": "2024-25",
+      "title": "Qcad training Program Spoken tutorial IIT-Bombay",
+      "date": "",
+      "participants": "79.0",
+      "scope": "Institute-level TPO activity"
+    },
+    {
+      "year": "2024-25",
+      "title": "OpenFoam training Program Spoken tutorial IIT-Bombay",
+      "date": "",
+      "participants": "105.0",
+      "scope": "Institute-level TPO activity"
+    },
+    {
+      "year": "2024-25",
+      "title": "Placement Fair-2025",
+      "date": "",
+      "participants": "25.0",
+      "scope": "Institute-level TPO activity"
+    },
+    {
+      "year": "2024-25",
+      "title": "One Week Short Term Training Program on “Comprehensive Fire Safety & Disaster Mitigation”",
+      "date": "",
+      "participants": "33.0",
+      "scope": "Institute-level TPO activity"
+    },
+    {
+      "year": "2023-24",
+      "title": "Placement Drive-2023",
+      "date": "",
+      "participants": "30.0",
+      "scope": "Institute-level TPO activity"
+    },
+    {
+      "year": "2023-24",
+      "title": "Overseas Employment and career information",
+      "date": "",
+      "participants": "38.0",
+      "scope": "Institute-level TPO activity"
+    },
+    {
+      "year": "2023-24",
+      "title": "Introduction to computer training Program Spoken tutorial IIT-Bombay",
+      "date": "",
+      "participants": "104.0",
+      "scope": "Institute-level TPO activity"
+    },
+    {
+      "year": "2023-24",
+      "title": "Employability Skills Training Program",
+      "date": "",
+      "participants": "64.0",
+      "scope": "Institute-level TPO activity"
+    },
+    {
+      "year": "2023-24",
+      "title": "Mock written test for Placement Preparation",
+      "date": "",
+      "participants": "45.0",
+      "scope": "Institute-level TPO activity"
+    },
+    {
+      "year": "2023-24",
+      "title": "IBM Skillsbuild Orientation Program",
+      "date": "",
+      "participants": "72.0",
+      "scope": "Institute-level TPO activity"
+    },
+    {
+      "year": "2023-24",
+      "title": "Placement fair-2024",
+      "date": "",
+      "participants": "40.0",
+      "scope": "Institute-level TPO activity"
+    },
+    {
+      "year": "2023-24",
+      "title": "Introduction to Computer training course",
+      "date": "",
+      "participants": "184.0",
+      "scope": "Institute-level TPO activity"
+    },
+    {
+      "year": "2023-24",
+      "title": "grade analysis",
+      "date": "",
+      "participants": "24.0",
+      "scope": "Institute-level TPO activity"
+    },
+    {
+      "year": "2023-24",
+      "title": "Mock Interview for Campus Placement preparation",
+      "date": "",
+      "participants": "45.0",
+      "scope": "Institute-level TPO activity"
+    },
+    {
+      "year": "2023-24",
+      "title": "Mock Group discussion for Campus Placement preparation",
+      "date": "",
+      "participants": "45.0",
+      "scope": "Institute-level TPO activity"
+    },
+    {
+      "year": "2022-23",
+      "title": "AI for All",
+      "date": "",
+      "participants": "Student= 22, Faculty=30.",
+      "scope": "Institute-level TPO activity"
+    },
+    {
+      "year": "2022-23",
+      "title": "Overseas Employment and Career Information Seminar",
+      "date": "",
+      "participants": "51.0",
+      "scope": "Institute-level TPO activity"
+    },
+    {
+      "year": "2022-23",
+      "title": "Interview Skills Expert lecture",
+      "date": "",
+      "participants": "60.0",
+      "scope": "Institute-level TPO activity"
+    },
+    {
+      "year": "2022-23",
+      "title": "Mock GD",
+      "date": "",
+      "participants": "52.0",
+      "scope": "Institute-level TPO activity"
+    },
+    {
+      "year": "2022-23",
+      "title": "Mock Interview",
+      "date": "",
+      "participants": "41.0",
+      "scope": "Institute-level TPO activity"
+    },
+    {
+      "year": "2022-23",
+      "title": "Mock Written Test",
+      "date": "",
+      "participants": "87.0",
+      "scope": "Institute-level TPO activity"
+    },
+    {
+      "year": "2022-23",
+      "title": "Placement Drive September -2022",
+      "date": "",
+      "participants": "130.0",
+      "scope": "Institute-level TPO activity"
+    },
+    {
+      "year": "2022-23",
+      "title": "Placement fair-2023",
+      "date": "",
+      "participants": "48.0",
+      "scope": "Institute-level TPO activity"
+    },
+    {
+      "year": "2022-23",
+      "title": "Placement Registration process and Placement Policy Awareness",
+      "date": "",
+      "participants": "44.0",
+      "scope": "Institute-level TPO activity"
+    },
+    {
+      "year": "2022-23",
+      "title": "Resume Writing Seminar",
+      "date": "",
+      "participants": "42.0",
+      "scope": "Institute-level TPO activity"
+    },
+    {
+      "year": "2022-23",
+      "title": "Soft Skills and Strategy to Crack Interview",
+      "date": "",
+      "participants": "45.0",
+      "scope": "Institute-level TPO activity"
+    },
+    {
+      "year": "2021-22",
+      "title": "Placement fair",
+      "date": "",
+      "participants": "56.0",
+      "scope": "Institute-level TPO activity"
+    },
+    {
+      "year": "2021-22",
+      "title": "Quiz Competition on Aptitude",
+      "date": "",
+      "participants": "102.0",
+      "scope": "Institute-level TPO activity"
+    },
+    {
+      "year": "2021-22",
+      "title": "Quiz Competition on Logical Reasoning",
+      "date": "",
+      "participants": "71.0",
+      "scope": "Institute-level TPO activity"
+    },
+    {
+      "year": "2021-22",
+      "title": "How to face Interview? Seminar",
+      "date": "",
+      "participants": "41.0",
+      "scope": "Institute-level TPO activity"
+    }
+  ],
+  "internship": [
+    [
+      "2023-24",
+      "Internship-I",
+      "3",
+      42,
+      25
+    ],
+    [
+      "2023-24",
+      "Internship-II",
+      "5",
+      30,
+      28
+    ],
+    [
+      "2024-25",
+      "Internship-I",
+      "3",
+      31,
+      23
+    ],
+    [
+      "2024-25",
+      "Internship-II",
+      "5",
+      18,
+      6
+    ],
+    [
+      "2025-26",
+      "Internship-II",
+      "5",
+      28,
+      12
+    ]
+  ],
+  "internship_industries": [
+    [
+      "2025-26",
+      "SEKO Shivam Engitech Pvt. Ltd., Vadodara",
+      "13",
+      "—"
+    ],
+    [
+      "2025-26",
+      "Patel Engineering",
+      "3",
+      "—"
+    ],
+    [
+      "2025-26",
+      "Hilti Manufacturing",
+      "2",
+      "—"
+    ],
+    [
+      "2025-26",
+      "Exemed Pharmaceuticals",
+      "2",
+      "—"
+    ],
+    [
+      "2025-26",
+      "Signify Innovations",
+      "2",
+      "—"
+    ],
+    [
+      "2025-26",
+      "R R Kabel, Waghodia",
+      "1",
+      "—"
+    ],
+    [
+      "2025-26",
+      "Aditya Birla Power Composites",
+      "1",
+      "—"
+    ],
+    [
+      "2025-26",
+      "Newlyweds Foods India",
+      "1",
+      "—"
+    ],
+    [
+      "2025-26",
+      "Sree Ambika Electrical (panel and maintenance)",
+      "1",
+      "—"
+    ],
+    [
+      "2025-26",
+      "Sumukha Automation",
+      "1",
+      "—"
+    ],
+    [
+      "2025-26",
+      "Kaizen Switchgear Products",
+      "1",
+      "—"
+    ],
+    [
+      "2025-26",
+      "Shreeji Auto",
+      "1",
+      "—"
+    ],
+    [
+      "2023-24",
+      "SUCHI FASTENERS",
+      "6",
+      "1"
+    ],
+    [
+      "2023-24",
+      "SEKO Shivam Engitech Pvt. Ltd.",
+      "6",
+      "0"
+    ],
+    [
+      "2023-24",
+      "A.G. industries private limited",
+      "3",
+      "0"
+    ],
+    [
+      "2023-24",
+      "BTW Atlanta Transformers Ind. Pvt. Ltd.",
+      "2",
+      "1"
+    ],
+    [
+      "2023-24",
+      "Chauhan engineering",
+      "2",
+      "0"
+    ],
+    [
+      "2023-24",
+      "Cryogas Equipment Pvt Ltd",
+      "1",
+      "1"
+    ],
+    [
+      "2023-24",
+      "FLOW PACK",
+      "0",
+      "2"
+    ],
+    [
+      "2023-24",
+      "Gujarat Fluorochemicals Limited",
+      "2",
+      "0"
+    ],
+    [
+      "2023-24",
+      "Meet scientific works",
+      "0",
+      "2"
+    ],
+    [
+      "2023-24",
+      "Pakona Engineering",
+      "1",
+      "1"
+    ],
+    [
+      "2023-24",
+      "POOJA INDUSTRIES PVT. LTD.",
+      "2",
+      "0"
+    ],
+    [
+      "2023-24",
+      "R.k engineering wark",
+      "2",
+      "0"
+    ],
+    [
+      "2023-24",
+      "AAKAR INDUSTRIES",
+      "1",
+      "0"
+    ],
+    [
+      "2023-24",
+      "AAYUSHI STEEL PRODUCTS",
+      "1",
+      "0"
+    ],
+    [
+      "2023-24",
+      "Ablaze polymer lining and coating pvt. Ltd",
+      "1",
+      "0"
+    ],
+    [
+      "2023-24",
+      "Accurate machine",
+      "0",
+      "1"
+    ],
+    [
+      "2023-24",
+      "Agarwal tanks & allied works",
+      "1",
+      "0"
+    ],
+    [
+      "2023-24",
+      "Ami LifeSciences Pvt. Ltd.",
+      "0",
+      "1"
+    ],
+    [
+      "2023-24",
+      "Artee flow controls Pvt Ltd",
+      "0",
+      "1"
+    ],
+    [
+      "2023-24",
+      "Ashirwad engineering",
+      "1",
+      "0"
+    ],
+    [
+      "2023-24",
+      "Asian Sky Infrastructure pvt ltd",
+      "0",
+      "1"
+    ],
+    [
+      "2023-24",
+      "Asiatic Engineers",
+      "0",
+      "1"
+    ],
+    [
+      "2023-24",
+      "Auro pump pvt. Ltd",
+      "0",
+      "1"
+    ],
+    [
+      "2023-24",
+      "Autofit private limited",
+      "1",
+      "0"
+    ],
+    [
+      "2023-24",
+      "BARODA MOTOR GARAGE",
+      "0",
+      "1"
+    ],
+    [
+      "2023-24",
+      "Ecoman 912/B makarpura gidc vadodara",
+      "1",
+      "0"
+    ],
+    [
+      "2023-24",
+      "Global Gourmet Private Limited",
+      "1",
+      "0"
+    ],
+    [
+      "2023-24",
+      "IGTR AHMEDABAD",
+      "0",
+      "1"
+    ],
+    [
+      "2023-24",
+      "Indian oil corporation Ltd",
+      "0",
+      "1"
+    ],
+    [
+      "2023-24",
+      "KAMBOLIWALA DAIRY BHIMPURA ROAD, AMOD DIST-BHARUCH-392110",
+      "0",
+      "1"
+    ],
+    [
+      "2023-24",
+      "KHODIYAR AUTO CAD CENTER",
+      "0",
+      "1"
+    ],
+    [
+      "2023-24",
+      "KHODIYAR CAD Center (1) Pvt. Ltd.",
+      "0",
+      "1"
+    ],
+    [
+      "2023-24",
+      "KYB CONMAT",
+      "0",
+      "1"
+    ],
+    [
+      "2023-24",
+      "MARUTI FABRICATION",
+      "1",
+      "0"
+    ],
+    [
+      "2023-24",
+      "NEO NIR ENGINEERING",
+      "0",
+      "1"
+    ],
+    [
+      "2023-24",
+      "NEXIS PHARMACEUTICAL",
+      "1",
+      "0"
+    ],
+    [
+      "2023-24",
+      "Piramal Glass, Jambusar, Uchchad, Gujarat 392150",
+      "0",
+      "1"
+    ],
+    [
+      "2023-24",
+      "RA Engineering",
+      "0",
+      "1"
+    ],
+    [
+      "2023-24",
+      "RIR POWER ELECTRONICS LIMITED",
+      "1",
+      "0"
+    ],
+    [
+      "2023-24",
+      "ShankarPackagingsLimitecl",
+      "1",
+      "0"
+    ],
+    [
+      "2023-24",
+      "Siemens Healthineers",
+      "1",
+      "0"
+    ],
+    [
+      "2023-24",
+      "Skill plus India",
+      "0",
+      "1"
+    ],
+    [
+      "2023-24",
+      "SUD CHEMIE INDIA PVT.LTD",
+      "0",
+      "1"
+    ],
+    [
+      "2023-24",
+      "Thermax Babcock & Wilcox Energy Solutions Ltd",
+      "1",
+      "0"
+    ],
+    [
+      "2023-24",
+      "Thermax ltd.",
+      "0",
+      "1"
+    ],
+    [
+      "2023-24",
+      "Transpek silox PVT LTP",
+      "0",
+      "1"
+    ],
+    [
+      "2023-24",
+      "V&K Engineering",
+      "0",
+      "1"
+    ],
+    [
+      "2023-24",
+      "Vikas engineering",
+      "0",
+      "1"
+    ],
+    [
+      "2023-24",
+      "સૂચિ ફાસ્ટર્નર પવત. લટડ.",
+      "1",
+      "0"
+    ],
+    [
+      "2024-25",
+      "SEKO Shivam Engitech Pvt. Ltd.",
+      "1",
+      "11"
+    ],
+    [
+      "2024-25",
+      "PATEL ENGINEERING",
+      "4",
+      "0"
+    ],
+    [
+      "2024-25",
+      "AAYUSHI STEEL PRODUCTS",
+      "0",
+      "3"
+    ],
+    [
+      "2024-25",
+      "Global Gourmet private limited",
+      "2",
+      "1"
+    ],
+    [
+      "2024-25",
+      "BM MOTORS MULTI CAR WORKSHOP",
+      "2",
+      "0"
+    ],
+    [
+      "2024-25",
+      "Kiran motors Bodeli",
+      "2",
+      "0"
+    ],
+    [
+      "2024-25",
+      "Maruti scientific",
+      "2",
+      "0"
+    ],
+    [
+      "2024-25",
+      "Niom Corporation",
+      "2",
+      "0"
+    ],
+    [
+      "2024-25",
+      "3D RAMS",
+      "1",
+      "0"
+    ],
+    [
+      "2024-25",
+      "B M Motors",
+      "1",
+      "0"
+    ],
+    [
+      "2024-25",
+      "Bodal Chemical Limited",
+      "1",
+      "0"
+    ],
+    [
+      "2024-25",
+      "Chota udepur Polly tacnic",
+      "1",
+      "0"
+    ],
+    [
+      "2024-25",
+      "For Kataria Automobiles PVT Ltd.",
+      "1",
+      "0"
+    ],
+    [
+      "2024-25",
+      "GOSALIA WIRE INC.",
+      "0",
+      "1"
+    ],
+    [
+      "2024-25",
+      "Gvolts Transformers Pvt.Ltd.",
+      "1",
+      "0"
+    ],
+    [
+      "2024-25",
+      "INTEGRA",
+      "1",
+      "0"
+    ],
+    [
+      "2024-25",
+      "Kaizen Switchgear Products",
+      "1",
+      "0"
+    ],
+    [
+      "2024-25",
+      "MAA INDUSTRIES",
+      "1",
+      "0"
+    ],
+    [
+      "2024-25",
+      "Mercury EV Tech Limited",
+      "1",
+      "0"
+    ],
+    [
+      "2024-25",
+      "Newlyweds foods pvt.ltd",
+      "1",
+      "0"
+    ],
+    [
+      "2024-25",
+      "pakona engineers (i) pvt ltd",
+      "0",
+      "1"
+    ],
+    [
+      "2024-25",
+      "R.k Engineering Works",
+      "0",
+      "1"
+    ],
+    [
+      "2024-25",
+      "Ravi HONDA",
+      "1",
+      "0"
+    ],
+    [
+      "2024-25",
+      "Raychem RPG Halol",
+      "1",
+      "0"
+    ],
+    [
+      "2024-25",
+      "RR KABEL",
+      "1",
+      "0"
+    ],
+    [
+      "2024-25",
+      "Vadodara light factory",
+      "1",
+      "0"
+    ],
+    [
+      "2024-25",
+      "Yogeshware motor bodeli",
+      "1",
+      "0"
+    ]
+  ],
+  "mou": [
+    [
+      "Lokhandwala & Sons",
+      "6/2/2024",
+      "Department MoU register"
+    ],
+    [
+      "Advance Electronic System",
+      "6/2/2024",
+      "Department MoU register"
+    ],
+    [
+      "M/S Consultech",
+      "6/2/2024",
+      "Department MoU register"
+    ],
+    [
+      "Spoken Tutorial (ST), IIT Bombay",
+      "29/9/2023",
+      "Department MoU register"
+    ],
+    [
+      "Connect power PVT.LTD",
+      "27/12/2021",
+      "Department MoU register"
+    ],
+    [
+      "Zenfin Engineering, Vadodara",
+      "15/12/2021",
+      "Department MoU register"
+    ],
+    [
+      "Flame Sorlen PVT LTD, Surat",
+      "16/11/2021",
+      "Department MoU register"
+    ],
+    [
+      "Engineering College, Tuwa",
+      "14/10/2021",
+      "Department MoU register"
+    ],
+    [
+      "Manish Agnicorp PVT LTD",
+      "13/12/2021",
+      "Department MoU register"
+    ],
+    [
+      "Himaya Prevention PVT LTD",
+      "16/11/2021",
+      "Department MoU register"
+    ],
+    [
+      "KJD Engineers",
+      "16/9/2021",
+      "Department MoU register"
+    ],
+    [
+      "Manish Engicorp Pvt. Ltd., Vadodara",
+      "2025-26",
+      "Industry collaboration record"
+    ],
+    [
+      "Embesys - The Project Solution, Vadodara",
+      "2025-26",
+      "Industry collaboration record"
+    ]
+  ],
+  "visits": [
+    [
+      "31/03/2026",
+      "Kaynes Semicon, Sanand and Science City, Ahmedabad",
+      "Institute students",
+      "46 students (institute-level; Mechanical share not recorded)"
+    ],
+    [
+      "05/10/2024",
+      "Global Gourmet Pvt Ltd (Makarpura GIDC Vadodara)",
+      "2nd & 3rd year",
+      "not recorded"
+    ],
+    [
+      "07/10/2024",
+      "Siemens Center of Excellence at M.S. University Vadodara",
+      "Sem 3 & 5",
+      "38"
+    ],
+    [
+      "11/10/2024",
+      "Baroda Dairy",
+      "Sem 3 & 5",
+      "37"
+    ],
+    [
+      "01/02/2025",
+      "SEKO Shivam Sundaram EngiTech Pvt Ltd Vadodara",
+      "Sem 4 & 6",
+      "32"
+    ],
+    [
+      "27/02/2025",
+      "Shree Parantap Institute of CNC Programming",
+      "Sem 4 & 6",
+      "34"
+    ],
+    [
+      "27/10/2023",
+      "Khodiyar CAD Center",
+      "Sem 3 & 5",
+      "50"
+    ],
+    [
+      "19/12/2023",
+      "Tech Mech Industry Pvt Ltd",
+      "Sem 3 & 5",
+      "36"
+    ],
+    [
+      "19/12/2023",
+      "Baroda Dairy",
+      "Sem 3 & 5",
+      "37"
+    ],
+    [
+      "02/03/2024",
+      "Shree Parantap Institute of CNC Programming",
+      "Sem 4 & 6",
+      "39"
+    ],
+    [
+      "06/10/2022",
+      "Shivam Sundaram Engitech Pvt Ltd, Vadodara",
+      "Final year (workbook: Sem 5)",
+      "45"
+    ],
+    [
+      "22/02/2023",
+      "Schaeffler India Ltd, Vadodara",
+      "Final year",
+      "61 per the report (workbook: 30)"
+    ],
+    [
+      "24/03/2023",
+      "Shree Parantap Institute of CNC Programming",
+      "2nd and 3rd year",
+      "60 per the report (workbook: 42; SAR: 40)"
+    ],
+    [
+      "02/05/2023",
+      "Shivam Sundaram Engitech Pvt Ltd, Vadodara",
+      "Final year (workbook: Sem 2 and 4)",
+      "61"
+    ],
+    [
+      "09/06/2023",
+      "Entrepreneurship Development Centre, Parul University",
+      "4th Sem",
+      "34 (workbook)"
+    ]
+  ],
+  "lectures": [
+    [
+      "26/11/2025",
+      "Awareness seminar on PM Vishwakarma Yojana and entrepreneurship opportunities under MSME (Entrepreneurship development seminar)",
+      "Diploma students and entrepreneurs of Chhotaudepur district",
+      "41 (36 from Mechanical)"
+    ],
+    [
+      "16/10/2024",
+      "Gas turbine power plant (online - Google Meet)",
+      "Sem 5",
+      "not recorded"
+    ],
+    [
+      "18/10/2024",
+      "Idea2 Impact: Creating Entrepreneurial & Innovative Mindset of Students",
+      "Sem 3 & 5",
+      "46"
+    ],
+    [
+      "25/10/2024",
+      "Unlocking Opportunities: Transform Your Professional Journey",
+      "Sem 3 & 5 and staff",
+      "38"
+    ],
+    [
+      "23/10/2023",
+      "Rapid prototyping machine (3D printer)",
+      "Sem 5",
+      "39"
+    ],
+    [
+      "13/12/2023",
+      "The Art of Opportunity: Identifying and Evaluating Business Ideas",
+      "Sem 5",
+      "42"
+    ],
+    [
+      "26/04/2024",
+      "CNC programming with simulation software",
+      "Sem 6",
+      "38"
+    ],
+    [
+      "12/04/2023",
+      "Jigs and Fixtures (online, Google Meet)",
+      "Sem 6",
+      "41 (workbook)"
+    ],
+    [
+      "13/04/2023",
+      "CNC Part Programming",
+      "Sem 6",
+      "40 (workbook)"
+    ],
+    [
+      "04/05/2023",
+      "Plant safety (online, Google Meet)",
+      "Sem 4 and 6",
+      "56 (workbook)"
+    ],
+    [
+      "06/05/2023",
+      "Flexible Manufacturing System (online, Google Meet)",
+      "Sem 6",
+      "42 (workbook)"
+    ],
+    [
+      "07/04/2022",
+      "CNC Machine Programming and Simulation",
+      "Sem 6",
+      "64 (workbook)"
+    ],
+    [
+      "15/04/2022",
+      "Robotics",
+      "3rd year",
+      "57"
+    ]
+  ]
+}

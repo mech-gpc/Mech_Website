@@ -1,0 +1,13 @@
+NEW PAGES
+TPO: tpo.html (placement.html remains a working alias).
+Internship: internship.html.
+Student achievements: student-achievements.html.
+Contribution to society: contribution-to-society.html.
+
+All pages include a Careers and student life navigation strip. Existing notices, analytics, translation controls and homepage slideshow are retained.
+
+Public data are aggregated from Mechanical-labelled rows; private contact and enrolment data are not copied. Mixed-institute TPO and community records are identified as institute-level. Placement figures are list-based selected-student counts, not a joining rate. Newsletter covers/highlights are included; full PowerPoint newsletters are not bundled.
+
+Before publishing updated outcome claims: reconcile ambiguous workbook dates, organization spelling variants, the 2025-26 internship branch-code mismatch, duplicate industry assignments and historical MoU validity. The website already marks these limitations where they affect interpretation.
+
+Suggested next additions: a department-approved alumni update form, verified recruiter application links and a public newsletter archive with approved PDFs. Provide new public Drive links if original reports are to be linked.
