@@ -1,0 +1,95 @@
+{
+  "cohort_percentages": [
+    {
+      "batch": "2021 entry",
+      "cohort": 28,
+      "placed": 18,
+      "placement_percent": 64.28571428571429,
+      "higher_studies": 5,
+      "higher_study_percent": 17.857142857142858
+    },
+    {
+      "batch": "2022 entry",
+      "cohort": 20,
+      "placed": 14,
+      "placement_percent": 70.0,
+      "higher_studies": 1,
+      "higher_study_percent": 5.0
+    },
+    {
+      "batch": "2023 entry",
+      "cohort": 23,
+      "placed": 9,
+      "placement_percent": 39.130434782608695,
+      "higher_studies": 5,
+      "higher_study_percent": 21.73913043478261
+    }
+  ],
+  "annual_package_summary": [
+    {
+      "year": "2019-20",
+      "usable_offers": 16,
+      "median_lpa": 1.236,
+      "highest_lpa": 1.236,
+      "missing_annual_rows": 0,
+      "inconsistent_rows": 0,
+      "duplicate_valid_rows": 0
+    },
+    {
+      "year": "2020-21",
+      "usable_offers": 33,
+      "median_lpa": 1.26,
+      "highest_lpa": 1.64448,
+      "missing_annual_rows": 0,
+      "inconsistent_rows": 0,
+      "duplicate_valid_rows": 0
+    },
+    {
+      "year": "2021-22",
+      "usable_offers": 37,
+      "median_lpa": 1.5,
+      "highest_lpa": 1.8,
+      "missing_annual_rows": 0,
+      "inconsistent_rows": 12,
+      "duplicate_valid_rows": 0
+    },
+    {
+      "year": "2022-23",
+      "usable_offers": 26,
+      "median_lpa": 1.8,
+      "highest_lpa": 2.4,
+      "missing_annual_rows": 0,
+      "inconsistent_rows": 2,
+      "duplicate_valid_rows": 0
+    },
+    {
+      "year": "2023-24",
+      "usable_offers": 19,
+      "median_lpa": 1.92,
+      "highest_lpa": 2.52,
+      "missing_annual_rows": 15,
+      "inconsistent_rows": 1,
+      "duplicate_valid_rows": 0
+    },
+    {
+      "year": "2024-25",
+      "usable_offers": 5,
+      "median_lpa": 2.88,
+      "highest_lpa": 3.48,
+      "missing_annual_rows": 0,
+      "inconsistent_rows": 9,
+      "duplicate_valid_rows": 0
+    },
+    {
+      "year": "2025-26",
+      "usable_offers": 10,
+      "median_lpa": 2.1,
+      "highest_lpa": 3.6,
+      "missing_annual_rows": 0,
+      "inconsistent_rows": 0,
+      "duplicate_valid_rows": 1
+    }
+  ],
+  "package_unit": "LPA (INR lakh per annum)",
+  "method": "Mechanical rows only. Annual package must be numeric and positive. Rows whose stated monthly amount times 12 differs from annual amount by over INR 1 are excluded. Exact repeated student/industry/annual-package combinations are deduplicated. Different employers or annual offers for one student remain separate offers. No monthly amounts are annualised to fill missing values."
+}

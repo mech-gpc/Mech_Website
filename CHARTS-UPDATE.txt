@@ -8,3 +8,7 @@ All charts show values and scope notes. Missing data are labelled as missing. Se
 Charts are built directly in HTML/CSS/SVG, with no external chart service. They work without JavaScript and resize for phones. Existing tables, filters, notices, language controls and GoatCounter settings are retained.
 
 To refresh chart figures, use the new source records to rebuild the chart HTML together with the detailed tables. Changing only data/career-summary.json does not update these static charts.
+
+PERCENTAGES AND PACKAGES
+The TPO page now shows percentages from the existing SAR entry-cohort summary: outcome count divided by the recorded final-year cohort. These do not use the academic-year selection totals or an eligible-student denominator. Figures from these sources remain separate.
+Annual median and highest packages are calculated from Mechanical offer rows in the supplied placement student workbook. Missing annual amounts, inconsistent monthly/annual pairs, and exact duplicate offer rows are excluded as described on the page. These statistics describe usable offers, not take-home salaries or confirmed joining. Coverage and exclusions are visible under View percentage calculations and package coverage.
