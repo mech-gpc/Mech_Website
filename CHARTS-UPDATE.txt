@@ -1,0 +1,10 @@
+CHARTS UPDATE
+TPO: paired zero-based bars for student selection and higher-study records; a separate chart of institute-level TPO activity entries.
+Internship: programme participation by year and industry assignment donut for 2025-26.
+Contribution to Society: chart of six community-summary entries by theme and a nine-date activity timeline. Entries and dates are different measures; neither is a beneficiary total.
+
+All charts show values and scope notes. Missing data are labelled as missing. Selection and higher-study records are not summed into unique outcomes. The internship donut counts 29 assignments across 28 distinct students; one branch classification is awaiting confirmation.
+
+Charts are built directly in HTML/CSS/SVG, with no external chart service. They work without JavaScript and resize for phones. Existing tables, filters, notices, language controls and GoatCounter settings are retained.
+
+To refresh chart figures, use the new source records to rebuild the chart HTML together with the detailed tables. Changing only data/career-summary.json does not update these static charts.
