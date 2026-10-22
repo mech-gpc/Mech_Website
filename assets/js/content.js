@@ -116,6 +116,8 @@ window.DOWNLOADS = [
     link: "https://drive.google.com/file/d/1RhtTXpXNDdfaJSNkv59wwYlOYWkug7Ur/view?usp=sharing" },
   { title: "Syllabus (Old)", text: "Previous curriculum, for backlog students", icon: "history_edu",
     link: "https://drive.google.com/drive/folders/1-Cshtw7Cb299ECrHz_BXtWiFJ-9QkX7d?usp=share_link" },
+    { title: "Study Material", text: "Lerning Resources like Question bank, Handwritten notes", icon: "history_edu",
+    link: "https://drive.google.com/drive/folders/1i4ahuAOjvRf8glsrNvFyKrVAGlzQGLxv?usp=sharing" },
   { title: "Lab Manuals (Old Syllabus)", text: "Practical manuals as per the old syllabus", icon: "inventory_2",
     link: "https://drive.google.com/drive/folders/1pKQ_n2MduTtWDhCy5pOlbbPE42BVnEJU?usp=share_link" },
 ];
