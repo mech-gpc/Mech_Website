@@ -110,8 +110,6 @@ window.DOWNLOADS = [
     link: "https://drive.google.com/drive/folders/1jqFY7QdRVsnSJunixYHZ6OtXzIZ3sIqF?usp=sharing" },
   { title: "GTU Academic Calendar", text: "University calendar for diploma programmes", icon: "event",
     link: "https://www.gtu.ac.in/academics/academic-calendar" },
-  { title: "Department Presentation", text: "Presentation on the Mechanical Engineering Department", icon: "slideshow",
-    link: "https://drive.google.com/file/d/1RhtTXpXNDdfaJSNkv59wwYlOYWkug7Ur/view?usp=sharing" },
   { title: "Study Material", text: "Lerning Resources like Question bank, Handwritten notes", icon: "history_edu",
     link: "https://drive.google.com/drive/folders/1i4ahuAOjvRf8glsrNvFyKrVAGlzQGLxv?usp=sharing" },
   { title: "Lab Manuals (Old Syllabus)", text: "Practical manuals as per the old syllabus", icon: "inventory_2",
