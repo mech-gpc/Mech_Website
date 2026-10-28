@@ -124,8 +124,8 @@ window.DOWNLOADS = [
    group: "NBA / SAR Evidence" | "Meetings & Circulars" | "Student Records & Results" | "Timetables & Lab Records"
    Leave link "" and the card shows "Not linked yet".                                              */
 window.FACULTY_LINKS = [
-  { group: "NBA / SAR Evidence", title: "1_Program_Files", text: "", icon: "folder", link: "" },
-  { group: "NBA / SAR Evidence", title: "2_SAR_Mechanical", text: "", icon: "folder_special", link: "" },
+  { group: "NBA / SAR Evidence", title: "1_Program_Files", text: "", icon: "folder", link: "https://drive.google.com/drive/folders/1pNrVA3r9496Aw2bAHhEUjzjiBeJFl7x6?usp=sharing" },
+  { group: "NBA / SAR Evidence", title: "2_SAR_Mechanical", text: "", icon: "folder_special", link: "https://drive.google.com/drive/folders/11Nlp0atzlLvbwI0KGNI9n5cDgXdkWjZS?usp=sharing" },
   { group: "Meetings & Circulars", title: "Minutes of meetings (MOM)", text: "Department, academic calendar and DAB meetings", icon: "groups", link: "" },
   { group: "Meetings & Circulars", title: "Internal circulars & office orders", text: "", icon: "description", link: "" },
   { group: "Student Records & Results", title: "Attendance registers", text: "Semester-wise attendance", icon: "fact_check", link: "" },
