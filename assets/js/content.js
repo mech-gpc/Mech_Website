@@ -124,7 +124,7 @@ window.DOWNLOADS = [
    group: "NBA / SAR Evidence" | "Meetings & Circulars" | "Student Records & Results" | "Timetables & Lab Records"
    Leave link "" and the card shows "Not linked yet".                                              */
 window.FACULTY_LINKS = [
-  { group: "NBA / SAR Evidence", title: "SAR evidence: all criteria", text: "Main folder with one sub-folder per criterion", icon: "folder_special", link: "" },
+  { group: "NBA / SAR Evidence", title: "SAR evidence: all criteria", text: "Main folder with one sub-folder per criterion", icon: "folder_special", link: "https://drive.google.com/drive/folders/1kFaYHxJLTMaNeu9VO5pG3cH6uDokwZgB?usp=sharing" },
   { group: "NBA / SAR Evidence", title: "Criterion 1: Vision, Mission & PEOs", text: "", icon: "flag", link: "" },
   { group: "NBA / SAR Evidence", title: "Criterion 2: Curriculum & Teaching-Learning", text: "", icon: "menu_book", link: "" },
   { group: "NBA / SAR Evidence", title: "Criterion 3: Course Outcomes & POs", text: "CO-PO mapping and attainment", icon: "account_tree", link: "" },
