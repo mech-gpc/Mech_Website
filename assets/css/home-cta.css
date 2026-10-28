@@ -1,0 +1,26 @@
+.home-cta{max-width:1280px;margin:auto;padding:28px 3rem 0;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:16px}
+.cta-box{position:relative;overflow:hidden;display:flex;align-items:center;gap:18px;padding:22px 24px;border-radius:14px;color:#fff;text-decoration:none;isolation:isolate;opacity:0;transform:translateY(18px);animation:cta-in .7s cubic-bezier(.2,.8,.2,1) forwards;transition:transform .25s,box-shadow .25s}
+.cta-box+.cta-box{animation-delay:.15s}
+.cta-box:hover{transform:translateY(-4px) scale(1.015)}
+.cta-box::after{content:"";position:absolute;top:0;left:-60%;width:40%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.35),transparent);transform:skewX(-20deg);animation:cta-shine 3.2s ease-in-out infinite;z-index:-1}
+.cta-icon{flex:none;width:58px;height:58px;border-radius:50%;background:rgba(255,255,255,.2);display:grid;place-items:center;animation:cta-float 2.6s ease-in-out infinite}
+.cta-icon .material-symbols-outlined{font-size:32px}
+.cta-text{flex:1;min-width:0}
+.cta-text strong{display:block;font:700 22px/1.2 Outfit,Inter,sans-serif;letter-spacing:.2px}
+.cta-text small{display:block;margin-top:4px;font-size:13px;opacity:.92}
+.cta-go{flex:none;padding:10px 18px;border-radius:999px;background:#fff;font:700 13px/1 Inter,sans-serif;text-transform:uppercase;letter-spacing:.6px;display:inline-flex;align-items:center;gap:6px}
+.cta-go .material-symbols-outlined{font-size:18px;transition:transform .25s}
+.cta-box:hover .cta-go .material-symbols-outlined{transform:translateX(5px)}
+.cta-fees{background:linear-gradient(135deg,#0b6b3a,#16a34a);box-shadow:0 8px 22px #16a34a40;animation:cta-in .7s cubic-bezier(.2,.8,.2,1) forwards,cta-pulse-g 2.2s ease-in-out 1s infinite}
+.cta-fees .cta-go{color:#0b6b3a}
+.cta-student{background:linear-gradient(135deg,#a50f1c,#e11d2e);box-shadow:0 8px 22px #e11d2e45;animation:cta-in .7s cubic-bezier(.2,.8,.2,1) .15s forwards,cta-pulse-r 2.2s ease-in-out 1.2s infinite}
+.cta-student .cta-go{color:#b4121f}
+.cta-student .cta-text small span{display:inline-block;margin:6px 6px 0 0;padding:3px 10px;border-radius:999px;background:rgba(255,255,255,.2);font-size:12px}
+@keyframes cta-in{to{opacity:1;transform:none}}
+@keyframes cta-shine{0%,55%{left:-60%}100%{left:140%}}
+@keyframes cta-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+@keyframes cta-pulse-g{0%,100%{box-shadow:0 8px 22px #16a34a40,0 0 0 0 #16a34a66}50%{box-shadow:0 8px 22px #16a34a40,0 0 0 12px #16a34a00}}
+@keyframes cta-pulse-r{0%,100%{box-shadow:0 8px 22px #e11d2e45,0 0 0 0 #e11d2e70}50%{box-shadow:0 8px 22px #e11d2e45,0 0 0 12px #e11d2e00}}
+@media(max-width:900px){.home-cta{grid-template-columns:1fr;padding:22px 20px 0}.cta-text strong{font-size:19px}}
+@media(max-width:480px){.cta-box{padding:18px;gap:12px}.cta-icon{width:46px;height:46px}.cta-go{padding:8px 12px}}
+@media(prefers-reduced-motion:reduce){.cta-box{opacity:1;transform:none}}
