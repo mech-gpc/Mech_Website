@@ -124,6 +124,6 @@ window.DOWNLOADS = [
    group: "NBA / SAR Evidence" | "Meetings & Circulars" | "Student Records & Results" | "Timetables & Lab Records"
    Leave link "" and the card shows "Not linked yet".                                              */
 window.FACULTY_LINKS = [
-  { group: "NBA / SAR Evidence", title: "1_Program_Files", text: "", icon: "folder", link: "https://drive.google.com/drive/folders/1pNrVA3r9496Aw2bAHhEUjzjiBeJFl7x6?usp=sharing" },
-  { group: "NBA / SAR Evidence", title: "2_SAR_Mechanical", text: "", icon: "folder_special", link: "https://drive.google.com/drive/folders/11Nlp0atzlLvbwI0KGNI9n5cDgXdkWjZS?usp=sharing" },
+  { group: "NBA / SAR Evidence", title: "1_Program_Files", text: "", icon: "folder", link: "https://drive.google.com/drive/folders/1iCgCbs-dhgt-3QpI35RYBd3OhCpfvom0?usp=sharing" },
+  { group: "NBA / SAR Evidence", title: "2_SAR_Mechanical", text: "", icon: "folder_special", link: "https://drive.google.com/drive/folders/1W_uduplqiMVTNRE6Uz1rWauo6TlFdp_B?usp=sharing" },
 ];
