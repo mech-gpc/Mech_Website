@@ -124,16 +124,8 @@ window.DOWNLOADS = [
    group: "NBA / SAR Evidence" | "Meetings & Circulars" | "Student Records & Results" | "Timetables & Lab Records"
    Leave link "" and the card shows "Not linked yet".                                              */
 window.FACULTY_LINKS = [
-  { group: "NBA / SAR Evidence", title: "SAR evidence: all criteria", text: "Main folder with one sub-folder per criterion", icon: "folder_special", link: "https://drive.google.com/drive/folders/1kFaYHxJLTMaNeu9VO5pG3cH6uDokwZgB?usp=sharing" },
-  { group: "NBA / SAR Evidence", title: "Criterion 1: Vision, Mission & PEOs", text: "", icon: "flag", link: "" },
-  { group: "NBA / SAR Evidence", title: "Criterion 2: Curriculum & Teaching-Learning", text: "", icon: "menu_book", link: "" },
-  { group: "NBA / SAR Evidence", title: "Criterion 3: Course Outcomes & POs", text: "CO-PO mapping and attainment", icon: "account_tree", link: "" },
-  { group: "NBA / SAR Evidence", title: "Criterion 4: Students' Performance", text: "", icon: "monitoring", link: "" },
-  { group: "NBA / SAR Evidence", title: "Criterion 5: Faculty Information", text: "", icon: "badge", link: "" },
-  { group: "NBA / SAR Evidence", title: "Criterion 6: Facilities & Technical Support", text: "", icon: "precision_manufacturing", link: "" },
-  { group: "NBA / SAR Evidence", title: "Criterion 7: Continuous Improvement", text: "", icon: "trending_up", link: "" },
-  { group: "NBA / SAR Evidence", title: "Criterion 8: Student Support Systems", text: "Institute level", icon: "support", link: "" },
-  { group: "NBA / SAR Evidence", title: "Criterion 9: Governance & Institutional Support", text: "Institute level", icon: "account_balance", link: "" },
+  { group: "NBA / SAR Evidence", title: "1_Program_Files", text: "", icon: "folder", link: "" },
+  { group: "NBA / SAR Evidence", title: "2_SAR_Mechanical", text: "", icon: "folder_special", link: "" },
   { group: "Meetings & Circulars", title: "Minutes of meetings (MOM)", text: "Department, academic calendar and DAB meetings", icon: "groups", link: "" },
   { group: "Meetings & Circulars", title: "Internal circulars & office orders", text: "", icon: "description", link: "" },
   { group: "Student Records & Results", title: "Attendance registers", text: "Semester-wise attendance", icon: "fact_check", link: "" },
