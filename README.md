@@ -7,7 +7,7 @@ https://sites.google.com/view/gpchhotaudepurmech/
 |---|---|
 | Home | `index.html` |
 | Vision, Mission, PEOs & PSOs | `vision-mission.html` |
-| Download | `download.html` |
+| Student Corner & Downloads | `download.html` |
 | Notice Board | `notice-board.html` |
 | Activity | `activity.html` |
 | Rules & Regulation | `rules-regulation.html` |
@@ -20,6 +20,7 @@ https://sites.google.com/view/gpchhotaudepurmech/
 | Student Achievements | `student-achievements.html` |
 | Virtual Labs | `virtual-lab.html` |
 | Training & Placement | `placement.html` |
+| Training & Career Progression (Mechanical placements, internships, higher studies, faculty training; static page with year-wise tables, charts and CSV summaries in `assets/documents/`) | `training-career.html` |
 | Faculty Corner (faculty login) | `faculty.html` |
 
 **Previewing on your computer:** most pages open with a double-click. The data pages
