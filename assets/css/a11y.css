@@ -1,0 +1,44 @@
+/* Accessibility panel and modes (see assets/js/a11y.js) */
+.a11y-btn{flex:none;display:inline-grid;place-items:center;width:34px;height:34px;border-radius:50%;border:1px solid rgba(255,255,255,.55);background:transparent;color:inherit;cursor:pointer;margin-right:8px}
+.a11y-btn:hover,.a11y-btn[aria-expanded=true]{background:rgba(255,255,255,.18)}
+.a11y-btn:focus-visible{outline:2px solid #fff;outline-offset:2px}
+.a11y-btn .material-symbols-outlined{font-size:22px}
+.a11y-panel{position:fixed;top:64px;right:16px;z-index:200;width:min(340px,calc(100vw - 32px));max-height:calc(100vh - 84px);overflow:auto;padding:16px 18px;background:#fff;color:#172c3f;border:1px solid #c4d4e3;border-radius:12px;box-shadow:0 14px 40px rgba(0,0,0,.28);font:14px/1.45 Inter,sans-serif}
+.a11y-panel[hidden]{display:none}
+.a11y-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:6px}
+.a11y-head h2{font:600 18px/1.3 Outfit,Inter,sans-serif;margin:0;color:inherit}
+.a11y-close{border:0;background:transparent;font-size:26px;line-height:1;cursor:pointer;color:inherit;padding:2px 8px;border-radius:6px}
+.a11y-panel fieldset{border:0;margin:12px 0 0;padding:0}
+.a11y-panel legend{font:600 12px/1.4 'Space Grotesk',Inter,sans-serif;text-transform:uppercase;letter-spacing:.08em;color:#38628a;margin-bottom:4px;padding:0}
+.a11y-row{display:flex;gap:10px;align-items:flex-start;padding:8px 6px;border-radius:8px;cursor:pointer}
+.a11y-row:hover{background:#edf2f8}
+.a11y-row input{margin-top:3px;width:18px;height:18px;flex:none}
+.a11y-row small{display:block;color:#49525a;font-size:12px}
+.a11y-note{margin:12px 0;font-size:12px;color:#49525a}
+.a11y-reset{width:100%;min-height:40px;border-radius:8px;border:1px solid #9cafc0;background:#edf2f8;color:#172c3f;font-weight:600;cursor:pointer}
+html[data-theme=dark] .a11y-panel{background:#16222f;color:#e6eef6;border-color:#2a3c4e}
+html[data-theme=dark] .a11y-panel legend{color:#7fb0e0}
+html[data-theme=dark] .a11y-row:hover{background:#1b2d3e}
+html[data-theme=dark] .a11y-row small,html[data-theme=dark] .a11y-note{color:#a9b8c7}
+html[data-theme=dark] .a11y-reset{background:#1b2d3e;color:#e6eef6;border-color:#38506a}
+
+/* colour-vision modes */
+html[data-cb=prot]{filter:url(#cb-prot)}
+html[data-cb=deut]{filter:url(#cb-deut)}
+html[data-cb=trit]{filter:url(#cb-trit)}
+
+/* underline links */
+html[data-ul] a{text-decoration:underline !important;text-underline-offset:3px}
+
+/* stop motion */
+html[data-rm] *,html[data-rm] *::before,html[data-rm] *::after{animation:none !important;transition:none !important;scroll-behavior:auto !important}
+
+/* high contrast */
+html[data-hc] body,html[data-hc] main,html[data-hc] header,html[data-hc] footer,html[data-hc] section,html[data-hc] article,html[data-hc] div,html[data-hc] nav,html[data-hc] li,html[data-hc] p,html[data-hc] span,html[data-hc] td,html[data-hc] th,html[data-hc] tr,html[data-hc] table,html[data-hc] figure,html[data-hc] figcaption,html[data-hc] small,html[data-hc] strong,html[data-hc] em,html[data-hc] h1,html[data-hc] h2,html[data-hc] h3,html[data-hc] h4,html[data-hc] label,html[data-hc] fieldset,html[data-hc] details,html[data-hc] summary,html[data-hc] ol,html[data-hc] ul,html[data-hc] caption{background:#000 !important;background-image:none !important;color:#fff !important;border-color:#fff !important;box-shadow:none !important;text-shadow:none !important}
+html[data-hc] a,html[data-hc] a *{color:#ffeb3b !important;text-decoration:underline !important;background:transparent !important}
+html[data-hc] button,html[data-hc] input,html[data-hc] select,html[data-hc] textarea{background:#000 !important;color:#fff !important;border:2px solid #fff !important;box-shadow:none !important}
+html[data-hc] a.cta-box,html[data-hc] .cta-box *,html[data-hc] .dl-box,html[data-hc] .dl-box *{background-image:none !important}
+html[data-hc] a.cta-box,html[data-hc] .dl-box{border:2px solid #ffeb3b !important}
+html[data-hc] :focus-visible{outline:3px solid #ffeb3b !important;outline-offset:2px}
+html[data-hc] img{filter:none !important}
+html[data-hc] .bar-track{background:#333 !important}

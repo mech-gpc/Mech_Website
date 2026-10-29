@@ -399,7 +399,7 @@ document.addEventListener("click", function () {
     requestAnimationFrame(function () { box && box.classList.add("on"); });
   }
   document.addEventListener("mouseover", function (e) {
-    var t = e.target.closest && e.target.closest("img[data-popout]"); if (!t || box) return;
+    var t = e.target.closest && e.target.closest("img[data-popout]"); if (!t || box || document.documentElement.hasAttribute("data-rm")) return;
     clearTimeout(timer); timer = setTimeout(function () { open(t.getAttribute("data-popout"), t.alt); }, 3000);
   });
   document.addEventListener("mouseout", function (e) { if (e.target.closest && e.target.closest("img[data-popout]")) clearTimeout(timer); });
