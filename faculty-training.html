@@ -27,7 +27,12 @@
 <nav class="font-tech text-label-technical uppercase text-on-primary-container" aria-label="Breadcrumb"><a href="index.html" class="hover:text-on-primary">Home</a> / <span class="text-secondary-fixed">Faculty Training</span></nav>
 <span class="block font-tech text-label-technical text-secondary-fixed uppercase tracking-widest">Professional Development</span>
 <h1 class="font-display text-display-hero-mobile md:text-display-hero">Faculty Training</h1>
-<p class="text-body-lg text-inverse-on-surface max-w-3xl">Training programmes, online courses and industrial training attended by the faculty, 2023-24 to 2025-26.</p><div id="dd-stats" class="grid grid-cols-2 md:grid-cols-4 gap-space-md pt-space-md"></div></div></section>
+<p class="text-body-lg text-inverse-on-surface max-w-3xl">Training programmes, online courses and industrial training attended by the Mechanical Engineering faculty, 2019-20 to 2026-27.</p><div id="dd-stats" class="grid grid-cols-2 md:grid-cols-4 gap-space-md pt-space-md"></div></div></section>
+<section class="bg-surface-slate py-space-2xl"><div class="max-w-7xl mx-auto px-margin-mobile md:px-margin space-y-space-md">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-space-lg">
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-lg"><h3 class="font-display text-headline-sm font-semibold">Interaction with the outside world</h3><p class="text-body-sm text-on-surface-variant mb-space-md">Trainings by the organisation that hosted them. Colour shows the type of partner.</p><div class="relative h-96"><canvas id="c-partner" role="img" aria-label="Number of trainings by hosting organisation"></canvas></div><div id="c-partner-legend" class="flex flex-wrap gap-x-space-md gap-y-1 pt-space-sm text-caption text-on-surface-variant"></div><p id="c-partner-note" class="text-caption text-on-surface-variant pt-space-xs"></p></div>
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-lg"><h3 class="font-display text-headline-sm font-semibold">Training area distribution</h3><p class="text-body-sm text-on-surface-variant mb-space-md">Share of all trainings by subject area, classified from the training title.</p><div class="relative h-96"><canvas id="c-area" role="img" aria-label="Pie chart of trainings by area"></canvas></div></div>
+</div></div></section>
 <section class="py-space-2xl"><div class="max-w-7xl mx-auto px-margin-mobile md:px-margin space-y-space-lg">
 <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
 <div id="dd-chips" class="flex flex-wrap gap-space-xs" role="group" aria-label="Filter"></div>
@@ -56,17 +61,39 @@
 <p id="analytics-note" class="hidden pt-space-sm text-caption text-on-surface-variant text-center">This website uses Microsoft Clarity and GoatCounter to see, anonymously, how visitors use the site so it can be improved.</p>
 </div></footer><script>document.getElementById("yr").textContent=new Date().getFullYear()</script>
 <div id="google_translate_element" class="hidden" aria-hidden="true"></div>
-<script src="assets/js/content.js"></script><script src="assets/js/notices-config.js"></script><script src="assets/js/site.js"></script><script src="assets/js/dept-data.js"></script><script>
+<script src="assets/js/content.js"></script><script src="assets/js/notices-config.js"></script><script src="assets/js/site.js"></script><script src="assets/js/dept-data.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script><script>
 dd.load("data/training.json").then(function (rows) {
   var by = dd.count(rows, "year"), years = Object.keys(by).sort();
-  var nptel = rows.filter(function (r) { return /NPTEL|SWAYAM/i.test(r.organiser); }).length;
-  var ind = rows.filter(function (r) { return /industrial training/i.test(r.programme); }).length;
+  var nptel = rows.filter(function (r) { return r.type === "MOOC / NPTEL"; }).length;
+  var ind = rows.filter(function (r) { return r.area === "Industrial exposure"; }).length;
   dd.stats(document.getElementById("dd-stats"), [[rows.length, "Programmes"], [Object.keys(dd.count(rows, "faculty")).length, "Faculty trained"], [nptel, "NPTEL / SWAYAM courses"], [ind, "Industrial trainings"]]);
   rows.sort(function (a, b) { return b.year.localeCompare(a.year); });
   var t = document.getElementById("dd-t");
-  dd.table(t, [["Year", "year"], ["Faculty", function (r) { return '<span class="whitespace-nowrap">' + dd.esc(r.faculty) + "</span>"; }], ["Programme", function (r) { return '<span class="font-semibold">' + dd.esc(r.programme) + "</span>"; }], ["Organiser", "organiser"], ["Period", function (r) { return dd.esc(r.period || "—"); }], ["Duration", function (r) { return '<span class="whitespace-nowrap">' + dd.esc(r.duration || "—") + "</span>"; }]], rows);
+  dd.table(t, [["Year", "year"], ["Faculty", function (r) { return '<span class="whitespace-nowrap">' + dd.esc(r.faculty) + "</span>"; }], ["Programme", function (r) { return '<span class="font-semibold">' + dd.esc(r.programme) + "</span>"; }], ["Organiser", function (r) { return dd.esc(r.organiser || "—"); }], ["Area", function (r) { return dd.esc(r.area || "—"); }], ["Period", function (r) { return dd.esc(r.period || "—"); }], ["Duration", function (r) { return '<span class="whitespace-nowrap">' + dd.esc(r.duration || "—") + "</span>"; }]], rows);
   t.querySelectorAll("tbody tr").forEach(function (tr, i) { tr.setAttribute("data-group", rows[i].year); });
   dd.filter({ root: t, itemSelector: "tbody tr", input: document.getElementById("dd-q"), chips: document.getElementById("dd-chips"), groups: years.reverse(), counter: document.getElementById("dd-count") });
+  drawCharts(rows);
 }).catch(function (e) { dd.fail(document.getElementById("dd-t"), e); });
+function drawCharts(rows) {
+  if (typeof Chart === "undefined") return;
+  var txt = getComputedStyle(document.body).color;
+  Chart.defaults.font.family = "Inter, sans-serif"; Chart.defaults.color = txt;
+  var TYPE = { "NITTTR": "#4C7CA9", "NPTEL / IITs": "#0891B2", "Industry": "#EA580C", "Colleges & universities": "#10B981", "Other institutions": "#F5A524" };
+  var byOrg = {}, typeOf = {}, unknown = 0;
+  rows.forEach(function (r) { if (!r.partner) { unknown++; return; } byOrg[r.partner] = (byOrg[r.partner] || 0) + 1; typeOf[r.partner] = r.partner_type; });
+  var orgs = Object.keys(byOrg).sort(function (a, b) { return byOrg[b] - byOrg[a] || a.localeCompare(b); });
+  var top = orgs.slice(0, 10), rest = orgs.slice(10);
+  var labels = top.slice(), data = top.map(function (o) { return byOrg[o]; }), cols = top.map(function (o) { return TYPE[typeOf[o]]; });
+  if (rest.length) { labels.push(rest.length + " other organisations"); data.push(rest.reduce(function (n, o) { return n + byOrg[o]; }, 0)); cols.push("#94A3B8"); }
+  labels = labels.map(function (l) { return l.length > 34 ? l.slice(0, 32) + "…" : l; });
+  new Chart(document.getElementById("c-partner"), { type: "bar", data: { labels: labels, datasets: [{ label: "Trainings", data: data, backgroundColor: cols, borderRadius: 4, maxBarThickness: 26 }] },
+    options: { indexAxis: "y", maintainAspectRatio: false, plugins: { legend: { display: false } }, scales: { x: { beginAtZero: true, ticks: { precision: 0 }, grid: { color: "rgba(148,163,184,.25)" } }, y: { grid: { display: false } } } } });
+  document.getElementById("c-partner-legend").innerHTML = Object.keys(TYPE).map(function (k) { return '<span class="inline-flex items-center gap-1"><span style="width:10px;height:10px;border-radius:2px;background:' + TYPE[k] + '"></span>' + dd.esc(k) + "</span>"; }).join("");
+  document.getElementById("c-partner-note").textContent = unknown ? unknown + " of " + rows.length + " records have no organiser recorded in the source file and are not shown." : "";
+  var by = dd.count(rows, "area"), names = Object.keys(by).sort(function (a, b) { return by[b] - by[a]; });
+  var PIE = ["#4C7CA9", "#F5A524", "#10B981", "#EA580C", "#8B5CF6", "#EC4899", "#64748B"];
+  new Chart(document.getElementById("c-area"), { type: "pie", data: { labels: names.map(function (n) { return n + " (" + by[n] + ")"; }), datasets: [{ data: names.map(function (n) { return by[n]; }), backgroundColor: PIE, borderColor: "rgba(0,0,0,0)", borderWidth: 2 }] },
+    options: { maintainAspectRatio: false, plugins: { legend: { position: "bottom", labels: { boxWidth: 12, padding: 10 } }, tooltip: { callbacks: { label: function (c) { return " " + c.parsed + " trainings (" + Math.round(c.parsed * 100 / rows.length) + "%)"; } } } } } });
+}
 </script>
 </body></html>

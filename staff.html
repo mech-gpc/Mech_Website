@@ -79,7 +79,7 @@ dd.load("data/staff.json").then(function (rows) {
       '<div class="w-14 h-14 rounded-xl bg-primary-container text-on-primary font-display text-headline-sm flex items-center justify-center shrink-0" aria-hidden="true">' + dd.esc(initials(r.name)) + '</div>' +
       '<div class="min-w-0 space-y-1"><h3 class="font-display text-headline-sm font-semibold leading-tight">' + dd.esc(r.name) + '</h3>' +
       '<p class="text-body-sm text-on-surface-variant">' + dd.esc(r.designation) + '</p>' +
-      '<div class="flex flex-wrap gap-space-xs pt-1"><span class="px-space-sm py-0.5 rounded bg-surface-container text-caption font-semibold text-secondary">' + dd.esc(r.qualification) + '</span>' +
+      '<div class="flex flex-wrap gap-space-xs pt-1">' + (r.position ? '<span class="px-space-sm py-0.5 rounded bg-secondary text-on-primary text-caption font-bold">' + dd.esc(r.position) + '</span>' : '') + '<span class="px-space-sm py-0.5 rounded bg-surface-container text-caption font-semibold text-secondary">' + dd.esc(r.qualification) + '</span>' +
       (r.joined_institute ? '<span class="px-space-sm py-0.5 rounded bg-surface-container-low text-caption text-on-surface-variant">Joined ' + dd.esc(r.joined_institute) + '</span>' : '') + '</div>' +
       '<p class="text-body-sm text-on-surface pt-1"><span class="text-on-surface-variant">Specialisation:</span> ' + dd.esc(spec(r.specialization)) + '</p></div></article>';
   }).join("");
