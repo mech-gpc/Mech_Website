@@ -42,3 +42,8 @@
 .new-badge{display:inline-block;margin-left:8px;padding:2px 9px;border-radius:999px;background:#fff;color:#e11d2e;font:800 12px/1.4 Inter,sans-serif;font-style:normal;letter-spacing:.6px;vertical-align:middle;animation:new-blink 1s steps(2,start) infinite}
 @keyframes new-blink{to{visibility:hidden}}
 @media(prefers-reduced-motion:reduce){.new-badge{animation:none}}
+
+.dl-c-new{--c1:#047857;--c2:#10b981}
+.dl-box.dl-c-new{outline:3px solid #fde047;outline-offset:2px;animation:cta-in .7s cubic-bezier(.2,.8,.2,1) forwards,new-glow 1.6s ease-in-out .7s infinite}
+@keyframes new-glow{0%,100%{box-shadow:0 8px 22px #10b98155,0 0 0 0 #fde04780}50%{box-shadow:0 8px 22px #10b98155,0 0 0 12px #fde04700}}
+@media(prefers-reduced-motion:reduce){.dl-box.dl-c-new{animation:cta-in .7s forwards}}
