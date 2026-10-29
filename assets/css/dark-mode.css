@@ -40,3 +40,32 @@ html[data-theme=dark] input,html[data-theme=dark] select,html[data-theme=dark] t
 html[data-theme=dark] .opportunity-nav{background:#14212e}
 html[data-theme=dark] .opportunity-nav a{background:#1b2d3e;color:#e6eef6}
 html[data-theme=dark] img:not([src$=".svg"]){filter:brightness(.9)}
+
+/* career / chart pages (TPO, Internship, Training & Career, ...) */
+html[data-theme=dark] .exp-stats>div{background:#16222f;border-left-color:#7fb0e0}
+html[data-theme=dark] .exp-stats strong,html[data-theme=dark] .exp-section h2,html[data-theme=dark] .visual-intro h2,html[data-theme=dark] .chart-heading h3,html[data-theme=dark] .bar-measure b,html[data-theme=dark] .donut-legend strong,html[data-theme=dark] .community-timeline strong,html[data-theme=dark] .tc-list,html[data-theme=dark] .chart-calculations summary{color:#e6eef6}
+html[data-theme=dark] .exp-stats span,html[data-theme=dark] .exp-note,html[data-theme=dark] .chart-heading>p,html[data-theme=dark] .chart-legend>span,html[data-theme=dark] .chart-note,html[data-theme=dark] .chart-source,html[data-theme=dark] .visual-intro>p:last-child,html[data-theme=dark] .donut-legend li,html[data-theme=dark] .records-empty,html[data-theme=dark] .records-controls span,html[data-theme=dark] .tc-hint,html[data-theme=dark] .student-art figcaption,html[data-theme=dark] .newsletter-grid p{color:#a9b8c7}
+html[data-theme=dark] .exp-note{background:#16222f;border-left-color:#4c7ca9}
+html[data-theme=dark] .exp-section,html[data-theme=dark] .visual-overview{border-bottom-color:#2a3c4e}
+html[data-theme=dark] .exp-eyebrow,html[data-theme=dark] .community-timeline time{color:#7fb0e0}
+html[data-theme=dark] .exp-hero .exp-eyebrow{color:#a4c0da}
+html[data-theme=dark] .exp-jump a{background:#1b2d3e;color:#e6eef6}
+html[data-theme=dark] .chart-card,html[data-theme=dark] .chart-calculations,html[data-theme=dark] .student-art,html[data-theme=dark] .newsletter-grid article{background:#16222f;border-color:#2a3c4e;box-shadow:none}
+html[data-theme=dark] .bar-row{border-bottom-color:#22364a}
+html[data-theme=dark] .bar-row>strong{color:#c8d6e4}
+html[data-theme=dark] .bar-track{background:#22364a}
+html[data-theme=dark] .bar-missing,html[data-theme=dark] .bar-axis,html[data-theme=dark] .community-timeline small{color:#8fa3b6}
+html[data-theme=dark] .chart-note{border-top-color:#2a3c4e}
+html[data-theme=dark] .donut-total{fill:#e6eef6}
+html[data-theme=dark] .donut-unit{fill:#a9b8c7}
+html[data-theme=dark] .community-timeline{border-left-color:#2a3c4e}
+html[data-theme=dark] .timeline-dot{border-color:#16222f}
+html[data-theme=dark] .records-scroll{border-color:#2a3c4e}
+html[data-theme=dark] .records-scroll th{background:#1b2d3e;color:#e6eef6}
+html[data-theme=dark] .records-scroll td,html[data-theme=dark] .tc-table tbody th[scope=row]{border-top-color:#2a3c4e}
+html[data-theme=dark] .records-scroll tbody tr:nth-child(even){background:#131f2b}
+html[data-theme=dark] .tc-table caption{background:#1b2d3e;color:#e6eef6;border-bottom-color:#2a3c4e}
+html[data-theme=dark] .tc-table th[scope=row]{color:#e6eef6}
+html[data-theme=dark] .tc-table tfoot th,html[data-theme=dark] .tc-table tfoot td,html[data-theme=dark] .tc-table tfoot th[scope=row]{background:#1b2d3e;color:#e6eef6;border-top-color:#7fb0e0}
+html[data-theme=dark] .tc-badge{background:#4a3410;color:#fde7b0}
+html[data-theme=dark] .exp-columns article,html[data-theme=dark] .achievement-feature>img,html[data-theme=dark] .newsletter-grid img{background:#16222f}
