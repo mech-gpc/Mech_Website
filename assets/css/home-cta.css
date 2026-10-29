@@ -19,6 +19,16 @@
 /* Student Corner & Downloads page cards */
 .dl-box{animation:cta-in .7s cubic-bezier(.2,.8,.2,1) forwards}
 .dl-box.cta-fees,.dl-box.cta-student{animation:cta-in .7s cubic-bezier(.2,.8,.2,1) forwards}
+.dl-c0{--c1:#1d4ed8;--c2:#3b82f6}
+.dl-c1{--c1:#6d28d9;--c2:#8b5cf6}
+.dl-c2{--c1:#334155;--c2:#64748b}
+.dl-c3{--c1:#c2410c;--c2:#ea580c}
+.dl-c4{--c1:#3730a3;--c2:#6366f1}
+.dl-c5{--c1:#be185d;--c2:#ec4899}
+.dl-c6{--c1:#0e7490;--c2:#0891b2}
+.dl-c7{--c1:#a50f1c;--c2:#e11d2e}
+.dl-box[class*=dl-c]{background:linear-gradient(135deg,var(--c1),var(--c2));box-shadow:0 8px 22px color-mix(in srgb,var(--c2) 28%,transparent)}
+.dl-box[class*=dl-c] .cta-go{color:var(--c1)}
 .dl-box .cta-text strong{font-size:19px}
 @keyframes cta-in{to{opacity:1;transform:none}}
 @keyframes cta-shine{0%,55%{left:-60%}100%{left:140%}}

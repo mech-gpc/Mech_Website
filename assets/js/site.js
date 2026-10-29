@@ -120,10 +120,10 @@
       "</div></article>";
   }
 
-  function downloadHTML(d, compact) {
+  function downloadHTML(d, compact, i) {
     if (!compact) {
       var fees = /^https:\/\/erp\.eshiksa\.net/.test(d.link);
-      return '<a href="' + esc(d.link) + '" target="_blank" rel="noopener" class="cta-box dl-box ' + (fees ? "cta-fees" : "cta-student") + '">' +
+      return '<a href="' + esc(d.link) + '" target="_blank" rel="noopener" class="cta-box dl-box ' + (fees ? "cta-fees" : "dl-c" + (i % 8)) + '">' +
         '<span class="cta-icon"><span translate="no" class="material-symbols-outlined" aria-hidden="true">' + esc(d.icon || "folder") + "</span></span>" +
         '<span class="cta-text"><strong>' + esc(d.title) + "</strong><small>" + esc(d.text) + "</small></span>" +
         '<span class="cta-go">' + (fees ? "Pay Now" : "Open") + '<span translate="no" class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></span></a>';
@@ -182,7 +182,7 @@
       el.innerHTML = cut(window.ACTIVITIES || []).map(activityHTML).join("");
     } else if (type === "downloads") {
       var compact = el.getAttribute("data-variant") === "compact";
-      el.innerHTML = cut(window.DOWNLOADS || []).map(function (d) { return downloadHTML(d, compact); }).join("");
+      el.innerHTML = cut(window.DOWNLOADS || []).map(function (d, i) { return downloadHTML(d, compact, i); }).join("");
     }
   });
 
