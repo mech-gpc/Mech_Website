@@ -107,7 +107,7 @@ window.DOWNLOADS = [
   { title: "Student Application Form", text: "Student application forms", icon: "assignment",
     link: "https://drive.google.com/drive/folders/1uudWV_cuo4ltYxFic5W97CPMNqUnvTDy?usp=sharing" },
   { title: "Academic Calendar (Institute)", text: "Term dates, exams and holidays of GP Chhotaudepur", icon: "calendar_month",
-    link: "https://drive.google.com/drive/folders/1jqFY7QdRVsnSJunixYHZ6OtXzIZ3sIqF?usp=sharing" },
+    link: "academic-calendar.html" },
   { title: "GTU Academic Calendar", text: "University calendar for diploma programmes", icon: "event",
     link: "https://www.gtu.ac.in/academics/academic-calendar" },
   { title: "Study Material", text: "Lerning Resources like Question bank, Handwritten notes", icon: "history_edu",

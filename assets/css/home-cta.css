@@ -38,3 +38,7 @@
 @media(max-width:900px){.home-cta{grid-template-columns:1fr;padding:22px 20px 0}.cta-text strong{font-size:19px}}
 @media(max-width:480px){.cta-box{padding:18px;gap:12px}.cta-icon{width:46px;height:46px}.cta-go{padding:8px 12px}}
 @media(prefers-reduced-motion:reduce){.cta-box{opacity:1;transform:none}}
+
+.new-badge{display:inline-block;margin-left:8px;padding:2px 9px;border-radius:999px;background:#fff;color:#e11d2e;font:800 12px/1.4 Inter,sans-serif;font-style:normal;letter-spacing:.6px;vertical-align:middle;animation:new-blink 1s steps(2,start) infinite}
+@keyframes new-blink{to{visibility:hidden}}
+@media(prefers-reduced-motion:reduce){.new-badge{animation:none}}

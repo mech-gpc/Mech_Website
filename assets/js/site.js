@@ -125,7 +125,7 @@
       var fees = /^https:\/\/erp\.eshiksa\.net/.test(d.link);
       return '<a href="' + esc(d.link) + '" target="_blank" rel="noopener" class="cta-box dl-box ' + (fees ? "cta-fees" : "dl-c" + (i % 8)) + '">' +
         '<span class="cta-icon"><span translate="no" class="material-symbols-outlined" aria-hidden="true">' + esc(d.icon || "folder") + "</span></span>" +
-        '<span class="cta-text"><strong>' + esc(d.title) + "</strong><small>" + esc(d.text) + "</small></span>" +
+        '<span class="cta-text"><strong>' + esc(d.title) + (d.badge ? ' <em class="new-badge">' + esc(d.badge) + "</em>" : "") + "</strong><small>" + esc(d.text) + "</small></span>" +
         '<span class="cta-go">' + (fees ? "Pay Now" : "Open") + '<span translate="no" class="material-symbols-outlined" aria-hidden="true">arrow_forward</span></span></a>';
     }
     return '<a href="' + esc(d.link) + '" target="_blank" rel="noopener" class="flex items-center justify-between gap-space-sm ' +
