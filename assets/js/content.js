@@ -123,9 +123,12 @@ window.DOWNLOADS = [
    shared only with the faculty Gmail IDs. Google then asks faculty to sign in, and nobody else
    can open it, even though the link itself is visible in this file.
    NEVER use "Anyone with the link" for these files.
-   group: "NBA / SAR Evidence" | "Meetings & Circulars" | "Student Records & Results" | "Timetables & Lab Records"
+   group: "NBA / SAR Evidence" | "Meetings & Circulars" | "Student Records & Results" | "Timetables & Lab Records" | "Government Portals"
+   public: true marks an open government website (no Google sign-in needed).
    Leave link "" and the card shows "Not linked yet".                                              */
 window.FACULTY_LINKS = [
   { group: "NBA / SAR Evidence", title: "1_Program_Files", text: "", icon: "folder", link: "https://drive.google.com/drive/folders/1iCgCbs-dhgt-3QpI35RYBd3OhCpfvom0?usp=sharing" },
   { group: "NBA / SAR Evidence", title: "2_SAR_Mechanical", text: "", icon: "folder_special", link: "https://drive.google.com/drive/folders/1W_uduplqiMVTNRE6Uz1rWauo6TlFdp_B?usp=sharing" },
+  { group: "Government Portals", title: "Karmyogi Gujarat", text: "Karmyogi portal, Government of Gujarat", icon: "badge", public: true, link: "https://karmyogi.gujarat.gov.in/" },
+  { group: "Government Portals", title: "Education Registration (GujGov)", text: "Registration portal, Gujarat Government education", icon: "how_to_reg", public: true, link: "https://registration.gujgov.edu.in/" },
 ];

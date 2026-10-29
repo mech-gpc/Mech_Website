@@ -363,7 +363,7 @@ document.addEventListener("click", function () {
 (function () {
   var root = document.getElementById("faculty-groups"); if (!root) return;
   var esc = function (s) { return String(s || "").replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); };
-  var GROUPS = [["NBA / SAR Evidence", "verified"], ["Meetings & Circulars", "forum"], ["Student Records & Results", "school"], ["Timetables & Lab Records", "schedule"]];
+  var GROUPS = [["NBA / SAR Evidence", "verified"], ["Meetings & Circulars", "forum"], ["Student Records & Results", "school"], ["Timetables & Lab Records", "schedule"], ["Government Portals", "account_balance"]];
   var list = window.FACULTY_LINKS || [];
   GROUPS = GROUPS.concat(list.map(function (l) { return l.group; }).filter(function (g, i, a) { return a.indexOf(g) === i && !GROUPS.some(function (x) { return x[0] === g; }); }).map(function (g) { return [g, "folder"]; }));
   root.innerHTML = GROUPS.map(function (g) {
@@ -377,7 +377,7 @@ document.addEventListener("click", function () {
         var inner = '<span class="w-11 h-11 rounded-lg ' + (on ? "bg-surface-container text-secondary" : "bg-surface-container-low text-on-surface-variant") + ' flex items-center justify-center shrink-0"><span translate="no" class="material-symbols-outlined" aria-hidden="true">' + esc(l.icon || "folder") + "</span></span>" +
           '<span class="min-w-0 flex-1"><span class="block font-semibold text-on-surface">' + esc(l.title) + "</span>" + (l.text ? '<span class="block text-body-sm text-on-surface-variant">' + esc(l.text) + "</span>" : "") +
           (on ? "" : '<span class="block pt-1 font-tech text-label-technical uppercase text-on-surface-variant">Not linked yet</span>') + "</span>" +
-          (on ? '<span translate="no" class="material-symbols-outlined text-on-surface-variant" aria-hidden="true">lock_open</span>' : "");
+          (on ? '<span translate="no" class="material-symbols-outlined text-on-surface-variant" aria-hidden="true">' + (l.public ? "open_in_new" : "lock_open") + "</span>" : "");
         return on ? '<a href="' + esc(l.link) + '" target="_blank" rel="noopener" class="bg-surface-container-lowest rounded-xl shadow-sm hover:shadow-md transition-shadow p-space-md flex items-center gap-space-md border border-border-slate">' + inner + "</a>"
           : '<div class="bg-surface-container-low rounded-xl p-space-md flex items-center gap-space-md border border-dashed border-border-slate opacity-80">' + inner + "</div>";
       }).join("") + "</div></section>";
