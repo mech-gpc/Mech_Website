@@ -383,3 +383,26 @@ document.addEventListener("click", function () {
       }).join("") + "</div></section>";
   }).join("");
 })();
+
+// Hover (or tap) a group photo to pop it out full screen; click, Esc or moving off the photo closes it
+(function () {
+  var timer, box;
+  function close() { clearTimeout(timer); if (!box) return; var b = box; box = null; b.classList.remove("on"); setTimeout(function () { b.remove(); }, 250); }
+  function open(src, alt) {
+    if (box) return;
+    box = document.createElement("div"); box.className = "popout"; box.setAttribute("role", "dialog"); box.setAttribute("aria-label", alt || "Photo");
+    var im = document.createElement("img"); im.src = src; im.alt = alt || "";
+    box.appendChild(im); document.body.appendChild(box);
+    box.addEventListener("click", close);
+    box.addEventListener("mouseleave", close);
+    im.addEventListener("mouseleave", close);
+    requestAnimationFrame(function () { box && box.classList.add("on"); });
+  }
+  document.addEventListener("mouseover", function (e) {
+    var t = e.target.closest && e.target.closest("img[data-popout]"); if (!t || box) return;
+    clearTimeout(timer); timer = setTimeout(function () { open(t.getAttribute("data-popout"), t.alt); }, 200);
+  });
+  document.addEventListener("mouseout", function (e) { if (e.target.closest && e.target.closest("img[data-popout]")) clearTimeout(timer); });
+  document.addEventListener("click", function (e) { var t = e.target.closest && e.target.closest("img[data-popout]"); if (t) open(t.getAttribute("data-popout"), t.alt); });
+  document.addEventListener("keydown", function (e) { if (e.key === "Escape") close(); });
+})();

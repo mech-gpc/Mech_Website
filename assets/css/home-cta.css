@@ -47,3 +47,9 @@
 .dl-box.dl-c-new{outline:3px solid #fde047;outline-offset:2px;animation:cta-in .7s cubic-bezier(.2,.8,.2,1) forwards,new-glow 1.6s ease-in-out .7s infinite}
 @keyframes new-glow{0%,100%{box-shadow:0 8px 22px #10b98155,0 0 0 0 #fde04780}50%{box-shadow:0 8px 22px #10b98155,0 0 0 12px #fde04700}}
 @media(prefers-reduced-motion:reduce){.dl-box.dl-c-new{animation:cta-in .7s forwards}}
+
+img[data-popout]{cursor:zoom-in}
+.popout{position:fixed;inset:0;z-index:100;display:flex;align-items:center;justify-content:center;background:rgba(8,12,20,.88);opacity:0;transition:opacity .25s;cursor:zoom-out}
+.popout.on{opacity:1}
+.popout img{max-width:96vw;max-height:94vh;border-radius:12px;box-shadow:0 20px 60px #000a;transform:scale(.92);transition:transform .3s cubic-bezier(.2,.8,.2,1)}
+.popout.on img{transform:none}
