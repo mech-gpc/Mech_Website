@@ -384,7 +384,7 @@ document.addEventListener("click", function () {
   }).join("");
 })();
 
-// Hover (or tap) a group photo to pop it out full screen; click, Esc or moving off the photo closes it
+// Hold the pointer on a group photo for 3 seconds (or tap it) to pop it out full screen; click, Esc or moving off the photo closes it
 (function () {
   var timer, box;
   function close() { clearTimeout(timer); if (!box) return; var b = box; box = null; b.classList.remove("on"); setTimeout(function () { b.remove(); }, 250); }
@@ -400,7 +400,7 @@ document.addEventListener("click", function () {
   }
   document.addEventListener("mouseover", function (e) {
     var t = e.target.closest && e.target.closest("img[data-popout]"); if (!t || box) return;
-    clearTimeout(timer); timer = setTimeout(function () { open(t.getAttribute("data-popout"), t.alt); }, 200);
+    clearTimeout(timer); timer = setTimeout(function () { open(t.getAttribute("data-popout"), t.alt); }, 3000);
   });
   document.addEventListener("mouseout", function (e) { if (e.target.closest && e.target.closest("img[data-popout]")) clearTimeout(timer); });
   document.addEventListener("click", function (e) { var t = e.target.closest && e.target.closest("img[data-popout]"); if (t) open(t.getAttribute("data-popout"), t.alt); });
