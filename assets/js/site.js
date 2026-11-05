@@ -182,7 +182,33 @@
       el.innerHTML = cut(window.ACTIVITIES || []).map(activityHTML).join("");
     } else if (type === "downloads") {
       var compact = el.getAttribute("data-variant") === "compact";
-      el.innerHTML = cut(window.DOWNLOADS || []).map(function (d, i) { return downloadHTML(d, compact, i); }).join("");
+      var paintDownloads = function (list) { el.innerHTML = cut(list).map(function (d, i) { return downloadHTML(d, compact, i); }).join(""); };
+      paintDownloads(window.DOWNLOADS || []);
+      // Optional Google Sheet: CALENDAR_SHEET_CSV on the Academic Calendar page, DOWNLOADS_SHEET_CSV elsewhere.
+      // Columns: Title, Link, optional Details, Icon, Badge, Show. Falls back to the built-in list.
+      var isCal = el.hasAttribute("data-calendar");
+      var calUrl = isCal ? window.CALENDAR_SHEET_CSV : window.DOWNLOADS_SHEET_CSV;
+      if (calUrl) {
+        var loadCal = function () {
+          fetch(calUrl + (calUrl.indexOf("?") > -1 ? "&" : "?") + "_=" + Math.floor(Date.now() / 60000))
+            .then(function (r) { if (!r.ok) throw new Error(r.status); return r.text(); })
+            .then(function (t) {
+              if (/^\s*</.test(t)) throw new Error("not CSV");
+              var rows = parseCSV(t).filter(function (r) { return r.some(function (c) { return c.trim(); }); });
+              var head = rows.shift().map(function (h) { return h.trim().toLowerCase(); });
+              var ix = function (n) { for (var i = 0; i < n.length; i++) { var k = head.indexOf(n[i]); if (k > -1) return k; } return -1; };
+              var T = ix(["title", "name", "term"]), L = ix(["link", "url"]), D = ix(["details", "text", "description"]), B = ix(["badge"]), S = ix(["show", "visible"]), I = ix(["icon"]);
+              if (T < 0 || L < 0) throw new Error("Sheet needs Title and Link columns");
+              var list = rows.map(function (r) {
+                var g = function (k) { return k > -1 ? (r[k] || "").trim() : ""; };
+                return { title: g(T), link: g(L), text: g(D) || (isCal ? "Term dates and holidays (PDF)" : ""), badge: g(B), icon: g(I) || (isCal ? "calendar_month" : "folder"), show: g(S) };
+              }).filter(function (d) { return d.title && /^https?:\/\//i.test(d.link) && !/^(no|n|hide|false)$/i.test(d.show); });
+              if (list.length) paintDownloads(list);
+            }).catch(function () { /* keep built-in list */ });
+        };
+        loadCal();
+        setInterval(function () { if (!document.hidden) loadCal(); }, 60000);
+      }
     }
   });
 

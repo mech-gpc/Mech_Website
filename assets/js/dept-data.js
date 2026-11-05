@@ -6,13 +6,77 @@
       return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
     });
   };
+  // Sheet-backed lists: column headings = the JSON field names (spaces allowed, e.g. "Academic year").
+  // num: numeric fields, bool: yes/no fields, need: columns that must exist.
+  var SRC = {
+    "data/staff.json": { key: "staff", need: ["name"] },
+    "data/training.json": { key: "training", need: ["faculty", "programme"] },
+    "data/projects.json": { key: "projects", need: ["title"], num: ["group", "students"], bool: ["report_available"] },
+    "data/nptel.json": { parts: {
+      courses: { key: "nptelCourses", need: ["faculty", "course"], num: ["weeks", "score_percent"] },
+      stars: { key: "nptelStars", need: ["name"] } } }
+  };
+  var parseCSV = function (text) {
+    var rows = [], row = [], f = "", q = false;
+    for (var i = 0; i < text.length; i++) {
+      var c = text[i];
+      if (q) { if (c === '"') { if (text[i + 1] === '"') { f += '"'; i++; } else q = false; } else f += c; }
+      else if (c === '"') q = true;
+      else if (c === ",") { row.push(f); f = ""; }
+      else if (c === "\n" || c === "\r") { if (c === "\r" && text[i + 1] === "\n") i++; row.push(f); rows.push(row); row = []; f = ""; }
+      else f += c;
+    }
+    if (f || row.length) { row.push(f); rows.push(row); }
+    return rows;
+  };
+  var sheetRows = function (url, cfg) {
+    return fetch(url + (url.indexOf("?") > -1 ? "&" : "?") + "_=" + Math.floor(Date.now() / 60000)).then(function (r) {
+      if (!r.ok) throw new Error(r.status);
+      return r.text();
+    }).then(function (t) {
+      if (/^\s*</.test(t)) throw new Error("not CSV");
+      var rows = parseCSV(t).filter(function (r) { return r.some(function (c) { return c.trim(); }); });
+      var head = rows.shift().map(function (h) { return h.trim().toLowerCase().replace(/[\s\-]+/g, "_"); });
+      (cfg.need || []).forEach(function (n) { if (head.indexOf(n) < 0) throw new Error("Sheet is missing column " + n); });
+      return rows.map(function (r) {
+        var o = {}; head.forEach(function (h, i) { if (h) o[h] = (r[i] || "").trim(); });
+        return o;
+      }).filter(function (o) {
+        return !/^(no|n|hide|false|left)$/i.test(o.show || "") && (cfg.need || []).every(function (n) { return o[n]; });
+      }).map(function (o) {
+        delete o.show;
+        (cfg.num || []).forEach(function (k) { if (k in o) { var v = parseFloat(o[k]); o[k] = isNaN(v) ? 0 : v; } });
+        (cfg.bool || []).forEach(function (k) { if (k in o) o[k] = /^(yes|y|true|1)$/i.test(o[k]); });
+        return o;
+      });
+    });
+  };
   w.dd = {
     esc: esc,
+    // Loads data/*.json. If a Google Sheet CSV is configured for it (window.SHEETS in notices-config.js),
+    // the sheet is used instead; the JSON file stays as the automatic fallback.
     load: function (path) {
-      return fetch(path).then(function (r) {
-        if (!r.ok) throw new Error("Could not load " + path + " (" + r.status + ")");
-        return r.json();
-      });
+      var json = function () {
+        return fetch(path).then(function (r) {
+          if (!r.ok) throw new Error("Could not load " + path + " (" + r.status + ")");
+          return r.json();
+        });
+      };
+      var S = w.SHEETS || {}, cfg = SRC[path];
+      if (!cfg) return json();
+      if (cfg.parts) {                       // object with lists inside (NPTEL)
+        var any = Object.keys(cfg.parts).some(function (k) { return S[cfg.parts[k].key]; });
+        if (!any) return json();
+        return json().then(function (base) {
+          return Promise.all(Object.keys(cfg.parts).map(function (k) {
+            var part = cfg.parts[k];
+            if (!S[part.key]) return null;
+            return sheetRows(S[part.key], part).then(function (rows) { if (rows.length) base[k] = rows; }, function () {});
+          })).then(function () { return base; });
+        });
+      }
+      if (!S[cfg.key]) return json();
+      return sheetRows(S[cfg.key], cfg).then(function (rows) { if (!rows.length) throw 0; return rows; }).catch(json);
     },
     // Shown in place of the data when it cannot load (most often: page opened by double-click)
     fail: function (el, e) {

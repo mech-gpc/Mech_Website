@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html><head><base target="_top"><meta charset="utf-8">
+<style>
+:root{--ink:#172C3F;--mut:#5b6b7a;--line:#d7dee5;--bg:#f4f6f8;--acc:#1f5f99;--bad:#b3261e;--ok:#1b7a3d}
+*{box-sizing:border-box}body{margin:0;font:15px/1.4 system-ui,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--ink)}
+header{background:var(--ink);color:#fff;padding:14px 20px}header h1{margin:0;font-size:18px}header small{opacity:.75}
+main{max-width:940px;margin:0 auto;padding:16px}
+.tabs{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px}.tabs button{padding:8px 12px;border:1px solid var(--line);background:#fff;border-radius:8px;font:inherit;cursor:pointer}
+.tabs button[aria-selected=true]{background:var(--acc);color:#fff;border-color:var(--acc)}
+.card{background:#fff;border:1px solid var(--line);border-radius:10px;padding:16px;margin-bottom:16px}
+h2{margin:0 0 10px;font-size:16px}label{display:block;font-size:13px;color:var(--mut);margin:10px 0 3px}
+input,select{width:100%;padding:9px;border:1px solid var(--line);border-radius:6px;font:inherit;background:#fff}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:0 12px}@media(max-width:560px){.grid{grid-template-columns:1fr}}
+.btn{padding:10px 16px;border:0;border-radius:6px;background:var(--acc);color:#fff;font:inherit;cursor:pointer;margin-top:14px}.btn:disabled{opacity:.5}
+.btn.alt{background:#fff;color:var(--ink);border:1px solid var(--line);margin-left:8px}
+.sm{padding:5px 10px;font-size:13px;border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:6px;cursor:pointer}.sm.del{color:var(--bad)}
+#msg{margin-top:10px;font-size:14px;min-height:20px}.err{color:var(--bad)}.good{color:var(--ok)}
+.item{display:flex;gap:10px;align-items:center;justify-content:space-between;padding:10px 0;border-top:1px solid var(--line)}
+.item:first-child{border-top:0}.item .t{min-width:0}.item .t b{display:block;overflow-wrap:anywhere}.item .t span{font-size:12px;color:var(--mut)}
+.item.hidden .t{opacity:.5}.acts{display:flex;gap:6px;flex-shrink:0}.hint{font-size:12px;color:var(--mut)}
+#q{margin-bottom:8px}
+</style></head><body>
+<header><h1>Mechanical Dept - Website Admin</h1><small>Changes appear on the website within about a minute.</small></header>
+<main>
+<div class="tabs" id="tabs" role="tablist"></div>
+<div class="card"><h2 id="ftitle"></h2>
+<form id="f" autocomplete="off"><div class="grid" id="fields"></div>
+<button class="btn" id="go" type="submit">Publish</button><button class="btn alt" id="cancel" type="button" hidden>Cancel edit</button>
+<div id="msg" role="status"></div></form></div>
+<div class="card"><h2>Current entries</h2><input id="q" placeholder="Search..." aria-label="Search entries"><div id="list">Loading...</div></div>
+</main>
+<script>
+var S=null,kind=null,rows=[],editing=0,$=function(i){return document.getElementById(i)};
+function say(t,c){$('msg').textContent=t;$('msg').className=c||''}
+function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+function fail(e){say(e&&e.message?e.message.replace(/^Error: /,''):String(e),'err')}
+google.script.run.withSuccessHandler(function(s){S=s;
+ $('tabs').innerHTML=Object.keys(s).map(function(k){return '<button role="tab" data-k="'+k+'" aria-selected="false">'+esc(s[k].label)+'</button>'}).join('');
+ tab(Object.keys(s)[0])}).withFailureHandler(fail).getSchema();
+$('tabs').onclick=function(e){var b=e.target.closest('button[data-k]');if(b)tab(b.dataset.k)};
+function lbl(f){return f.label.replace(/ \(.*/,'')}
+function tab(k){kind=k;editing=0;$('q').value='';
+ Array.prototype.forEach.call($('tabs').children,function(b){b.setAttribute('aria-selected',b.dataset.k===k)});
+ buildForm();say('');load()}
+function buildForm(){var s=S[kind];$('ftitle').textContent=(editing?'Edit ':'Add ')+s.label;
+ $('go').textContent=editing?'Save changes':'Publish';$('cancel').hidden=!editing;
+ $('fields').innerHTML=s.fields.map(function(f,i){var id='f'+i,h='',ph=f.label.indexOf('(')>-1?f.label.replace(/^[^(]*\(/,'').replace(/\)$/,''):'';
+  if(f.file){h='<label for="'+id+'">'+esc(lbl(f))+(f.required?' *':'')+'</label><input id="'+id+'" type="file" accept="'+(f.file==='image'?'image/*':'application/pdf,.pdf')+'"><label for="'+id+'l">...or paste a link</label><input id="'+id+'l" placeholder="https://">'}
+  else if(f.options){h='<label for="'+id+'">'+esc(lbl(f))+'</label><select id="'+id+'">'+f.options.map(function(o){return '<option>'+esc(o)+'</option>'}).join('')+'</select>'}
+  else{h='<label for="'+id+'">'+esc(lbl(f))+(f.required?' *':'')+'</label><input id="'+id+'" '+(f.type==='date'?'type="date"':f.type==='number'?'type="number" step="any"':'')+(f.list?' list="'+id+'d"':'')+(ph?' placeholder="'+esc(ph)+'"':'')+'>'+(f.list?'<datalist id="'+id+'d">'+f.list.map(function(o){return '<option>'+esc(o)+'</option>'}).join('')+'</datalist>':'')}
+  return '<div>'+h+'</div>'}).join('')}
+function fill(r){S[kind].fields.forEach(function(f,i){var v=r.values[f.key]||'',el=f.file?$('f'+i+'l'):$('f'+i);
+ if(f.options&&v&&f.options.indexOf(v)<0){var o=document.createElement('option');o.text=v;el.add(o)}el.value=v})}
+function load(){$('list').textContent='Loading...';
+ google.script.run.withSuccessHandler(function(r){rows=r;paint()}).withFailureHandler(function(e){$('list').textContent='';fail(e)}).list(kind)}
+function paint(){var q=$('q').value.toLowerCase(),s=S[kind];
+ var show=rows.filter(function(r){return !q||JSON.stringify(r.values).toLowerCase().indexOf(q)>-1});
+ if(!show.length){$('list').textContent=rows.length?'No match.':'Nothing yet.';return}
+ $('list').innerHTML=show.map(function(r){var off=/^(no|n|hide|false|left)$/i.test(r.show||''),v=r.values,t=v[s.fields[0].key]||v[s.fields[1].key]||'(untitled)';
+  var meta=s.fields.slice(1,5).map(function(f){return f.file?'':v[f.key]}).filter(Boolean).join(' - ');
+  return '<div class="item'+(off?' hidden':'')+'"><div class="t"><b>'+esc(t)+'</b><span>'+esc(meta)+(off?' - HIDDEN':'')+'</span></div><div class="acts">'+
+  '<button class="sm" data-a="edit" data-r="'+r.row+'">Edit</button><button class="sm" data-a="'+(off?'show':'hide')+'" data-r="'+r.row+'">'+(off?'Show':'Hide')+'</button><button class="sm del" data-a="del" data-r="'+r.row+'">Delete</button></div></div>'}).join('')}
+$('q').oninput=paint;
+$('list').onclick=function(e){var b=e.target.closest('button[data-a]');if(!b)return;var a=b.dataset.a,r=+b.dataset.r;
+ if(a==='edit'){var row=rows.filter(function(x){return x.row===r})[0];editing=r;buildForm();fill(row);say('Editing - change the fields and press Save changes.');scrollTo(0,0);return}
+ if(a==='del'&&!confirm('Delete this entry permanently?'))return;b.disabled=true;
+ var g=google.script.run.withSuccessHandler(function(){say(a==='del'?'Deleted.':'Updated.','good');if(editing===r){editing=0;buildForm()}load()}).withFailureHandler(function(x){fail(x);load()});
+ a==='del'?g.remove(kind,r):g.setShow(kind,r,a==='show')};
+$('cancel').onclick=function(){editing=0;buildForm();say('')};
+function readFile(f){return new Promise(function(res,rej){var fr=new FileReader();fr.onload=function(){res({name:f.name,mime:f.type,data:String(fr.result).split(',')[1]})};fr.onerror=rej;fr.readAsDataURL(f)})}
+$('f').onsubmit=function(ev){ev.preventDefault();var s=S[kind],vals={},jobs=[];
+ for(var i=0;i<s.fields.length;i++){var f=s.fields[i];
+  if(f.file){var fl=$('f'+i).files[0];if(fl&&fl.size>20*1024*1024){say('File is larger than 20 MB.','err');return}
+   if(fl)(function(k,file){jobs.push(readFile(file).then(function(o){vals[k]=o}))})(f.key,fl);else vals[f.key]=$('f'+i+'l').value}
+  else vals[f.key]=$('f'+i).value}
+ $('go').disabled=true;say('Saving...');
+ Promise.all(jobs).then(function(){google.script.run.withSuccessHandler(function(){say('Saved.','good');editing=0;buildForm();load()})
+  .withFailureHandler(function(x){fail(x);$('go').disabled=false}).save(kind,editing,vals)}).catch(function(x){fail(x);$('go').disabled=false})};
+</script></body></html>

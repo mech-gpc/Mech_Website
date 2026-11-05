@@ -1,1 +1,5 @@
 window.NOTICES_SHEET_CSV = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTRrVM6CrYf6EfbFjBnCN68Qcj36Vgk-dhkvhYT5UZ1_MXKADnbUcLIq8uZghjphA/pub?gid=1971794157&single=true&output=csv";
+window.CALENDAR_SHEET_CSV = ""; // paste the published CSV URL of the Calendar tab here
+// Google Sheet (published CSV) for each list. Leave "" to keep using the built-in data/*.json or list.
+window.DOWNLOADS_SHEET_CSV = "";
+window.SHEETS = { staff: "", training: "", projects: "", nptelCourses: "", nptelStars: "" };
